@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#1d2a30" />
+    <meta
+      name="description"
+      content="Álbum de cromos personal del Grand Tour of Switzerland: 64 sitios, una foto propia en cada uno. Proyecto no oficial."
+    />
+    <title>Álbum del Grand Tour</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  </head>
+  <body>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+    <header class="barra" id="barra" hidden>
+      <a class="barra__marca" href="#/" title="Volver a la portada">
+        <span class="cruz" aria-hidden="true"></span>
+        <span>Grand Tour <em>· álbum</em></span>
+      </a>
+      <nav class="barra__nav" aria-label="Secciones">
+        <a href="#/album" data-nav="album">Álbum</a>
+        <a href="#/mapa" data-nav="mapa">Mapa</a>
+        <a href="#/stats" data-nav="stats">Estadísticas</a>
+      </nav>
+    </header>
+    <main id="contenido" tabindex="-1"></main>
+    <div id="dialogo-raiz"></div>
+    <div class="aviso-vivo" id="aviso-vivo" role="status" aria-live="polite"></div>
+    <noscript>Este álbum necesita JavaScript para funcionar.</noscript>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

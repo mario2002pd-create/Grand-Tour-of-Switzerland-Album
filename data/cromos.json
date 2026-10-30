@@ -1,0 +1,2142 @@
+{
+  "_leeme": "Un cromo por sitio. Los textos traducibles están en data/i18n/<idioma>.json. Tus campos: foto_mia, fecha_visita (AAAA-MM-DD), nota_personal y visitado. Usa «npm run pegar» para rellenarlos automáticamente.",
+  "cromos": [
+    {
+      "id": "grossmuenster",
+      "numero": "01",
+      "nombre": "Grossmünster",
+      "canton": [
+        "ZH"
+      ],
+      "region": "etapa-1",
+      "categoria": "ciudad",
+      "coordenadas": {
+        "lat": 47.37,
+        "lon": 8.54417
+      },
+      "altitud": 417,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/grossmuenster/",
+      "imagen": {
+        "fondo": "img/fondos/grossmuenster.webp",
+        "miniatura": "img/fondos/grossmuenster-mini.webp",
+        "silueta": "img/siluetas/grossmuenster.webp",
+        "autor": "Schölla Schwarz",
+        "licencia": "CC BY 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Limmat_mit_Grossm%C3%BCnster_-_panoramio.jpg"
+      },
+      "foto_mia": "fotos/grossmuenster.jpg",
+      "foto_de_prueba": true,
+      "foto_credito": {
+        "autor": "Rico Reutimann",
+        "licencia": "Licencia de Unsplash",
+        "fuente": "https://unsplash.com/photos/XxAR3uzYiZY"
+      },
+      "fecha_visita": "2026-05-16",
+      "nota_personal": "FOTO DE PRUEBA (Rico Reutimann, Unsplash). Bórrala cuando pegues la tuya.",
+      "visitado": true
+    },
+    {
+      "id": "cataratas-rin",
+      "numero": "02",
+      "nombre": "Rheinfall",
+      "canton": [
+        "SH",
+        "ZH"
+      ],
+      "region": "etapa-1",
+      "categoria": "naturaleza",
+      "coordenadas": {
+        "lat": 47.67772,
+        "lon": 8.6157
+      },
+      "altitud": 374,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/the-rhine-falls/",
+      "imagen": {
+        "fondo": "img/fondos/cataratas-rin.webp",
+        "miniatura": "img/fondos/cataratas-rin-mini.webp",
+        "silueta": "img/siluetas/cataratas-rin.webp",
+        "autor": "Christian David (Espandero)",
+        "licencia": "CC BY-SA 4.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Chutes_du_Rhin_-_Octobre_2021.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "stein-am-rhein",
+      "numero": "03",
+      "nombre": "Stein am Rhein",
+      "canton": [
+        "SH"
+      ],
+      "region": "etapa-1",
+      "categoria": "pueblo",
+      "coordenadas": {
+        "lat": 47.65927,
+        "lon": 8.85962
+      },
+      "altitud": 402,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/destinations/stein-am-rhein/",
+      "imagen": {
+        "fondo": "img/fondos/stein-am-rhein.webp",
+        "miniatura": "img/fondos/stein-am-rhein-mini.webp",
+        "silueta": "img/siluetas/stein-am-rhein.webp",
+        "autor": "Franzfoto",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Stein_am_Rhein_-_Stadtkirche_und_Kloster_St.Georgen.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "abadia-st-gallen",
+      "numero": "04",
+      "nombre": "Stiftsbezirk St. Gallen",
+      "canton": [
+        "SG"
+      ],
+      "region": "etapa-1",
+      "categoria": "UNESCO",
+      "coordenadas": {
+        "lat": 47.42306,
+        "lon": 9.37722
+      },
+      "altitud": 675,
+      "rareza": "brillante",
+      "unesco": "patrimonio",
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/st-gallen-abbey-district/",
+      "imagen": {
+        "fondo": "img/fondos/abadia-st-gallen.webp",
+        "miniatura": "img/fondos/abadia-st-gallen-mini.webp",
+        "silueta": "img/siluetas/abadia-st-gallen.webp",
+        "autor": "Alexander Savin (A.Savin)",
+        "licencia": "Licencia Arte Libre 1.3",
+        "licencia_url": "https://artlibre.org/licence/lal/en/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:StGallen_asv2022-10_F%C3%BCrstabtei_img1.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "appenzell",
+      "numero": "05",
+      "nombre": "Appenzell",
+      "canton": [
+        "AI"
+      ],
+      "region": "etapa-1",
+      "categoria": "pueblo",
+      "coordenadas": {
+        "lat": 47.33173,
+        "lon": 9.40758
+      },
+      "altitud": 776,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/destinations/appenzell/",
+      "imagen": {
+        "fondo": "img/fondos/appenzell.webp",
+        "miniatura": "img/fondos/appenzell-mini.webp",
+        "silueta": "img/siluetas/appenzell.webp",
+        "autor": "Tobyc75",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Hauptgasse_Appenzell.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "rapperswil",
+      "numero": "06",
+      "nombre": "Rapperswil-Jona",
+      "canton": [
+        "SG"
+      ],
+      "region": "etapa-1",
+      "categoria": "lago",
+      "coordenadas": {
+        "lat": 47.22557,
+        "lon": 8.82228
+      },
+      "altitud": 408,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "photo-spot",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/photo-spot-rapperswil-jona/",
+      "imagen": {
+        "fondo": "img/fondos/rapperswil.webp",
+        "miniatura": "img/fondos/rapperswil-mini.webp",
+        "silueta": "img/siluetas/rapperswil.webp",
+        "autor": "Roland zh",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Rapperswil_-_Seedamm_-_Holzbr%C3%BCcke_-_Etzel_Kulm_2010-10-21_16-39-22.JPG"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "salenstein",
+      "numero": "07",
+      "nombre": "Arenenberg, Salenstein",
+      "canton": [
+        "TG"
+      ],
+      "region": "etapa-1",
+      "categoria": "lago",
+      "coordenadas": {
+        "lat": 47.67236,
+        "lon": 9.05957
+      },
+      "altitud": 458,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "photo-spot",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/photo-spot-lake-constance-untersee-region/",
+      "imagen": {
+        "fondo": "img/fondos/salenstein.webp",
+        "miniatura": "img/fondos/salenstein-mini.webp",
+        "silueta": "img/siluetas/salenstein.webp",
+        "autor": "LulaMae's",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Schloss_Arenenberg_mit_Napoleonmuseum.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "saentis",
+      "numero": "08",
+      "nombre": "Säntis",
+      "canton": [
+        "AI",
+        "AR",
+        "SG"
+      ],
+      "region": "etapa-2",
+      "categoria": "naturaleza",
+      "coordenadas": {
+        "lat": 47.24929,
+        "lon": 9.34242
+      },
+      "altitud": 2502,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "photo-spot",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/photo-spot-saentis/",
+      "imagen": {
+        "fondo": "img/fondos/saentis.webp",
+        "miniatura": "img/fondos/saentis-mini.webp",
+        "silueta": "img/siluetas/saentis.webp",
+        "autor": "Roland zh",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:S%C3%A4ntis_-_Batzberg_IMG_9803.JPG"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "sardona",
+      "numero": "09",
+      "nombre": "Tektonikarena Sardona",
+      "canton": [
+        "GL",
+        "SG",
+        "GR"
+      ],
+      "region": "etapa-2",
+      "categoria": "UNESCO",
+      "coordenadas": {
+        "lat": 46.89955,
+        "lon": 9.22262
+      },
+      "altitud": 2674,
+      "rareza": "brillante",
+      "unesco": "patrimonio",
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/tectonic-arena-sardona/",
+      "imagen": {
+        "fondo": "img/fondos/sardona.webp",
+        "miniatura": "img/fondos/sardona-mini.webp",
+        "silueta": "img/siluetas/sardona.webp",
+        "autor": "Roland Zumbühl (picswiss.ch)",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Picswiss_GL-12-03.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "buendner-herrschaft",
+      "numero": "10",
+      "nombre": "Bündner Herrschaft",
+      "canton": [
+        "GR"
+      ],
+      "region": "etapa-2",
+      "categoria": "pueblo",
+      "coordenadas": {
+        "lat": 47.00573,
+        "lon": 9.53188
+      },
+      "altitud": 509,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/destinations/buendner-herrschaft/",
+      "imagen": {
+        "fondo": "img/fondos/buendner-herrschaft.webp",
+        "miniatura": "img/fondos/buendner-herrschaft-mini.webp",
+        "silueta": "img/siluetas/buendner-herrschaft.webp",
+        "autor": "Daniel Friedlos",
+        "licencia": "CC BY-SA 2.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Flaesch_-_From_Regitzer_Spitz.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "flueela",
+      "numero": "11",
+      "nombre": "Flüelapass",
+      "canton": [
+        "GR"
+      ],
+      "region": "etapa-2",
+      "categoria": "puerto alpino",
+      "coordenadas": {
+        "lat": 46.74869,
+        "lon": 9.94886
+      },
+      "altitud": 2383,
+      "rareza": "brillante",
+      "unesco": null,
+      "origen": "puerto",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/experience-tour/car-motorcycle-grand-tour/facts-about-the-grand-tour-of-switzerland/alpine-passes/",
+      "imagen": {
+        "fondo": "img/fondos/flueela.webp",
+        "miniatura": "img/fondos/flueela-mini.webp",
+        "silueta": "img/siluetas/flueela.webp",
+        "autor": "Roland Zumbühl (picswiss.ch)",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:GR-96-03.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "guarda",
+      "numero": "12",
+      "nombre": "Guarda",
+      "canton": [
+        "GR"
+      ],
+      "region": "etapa-2",
+      "categoria": "pueblo",
+      "coordenadas": {
+        "lat": 46.77551,
+        "lon": 10.15227
+      },
+      "altitud": 1655,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/destinations/guarda/",
+      "imagen": {
+        "fondo": "img/fondos/guarda.webp",
+        "miniatura": "img/fondos/guarda-mini.webp",
+        "silueta": "img/siluetas/guarda.webp",
+        "autor": "Gregory Zeier",
+        "licencia": "CC BY 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Guarda_Grisons_001.JPG"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "parque-nacional",
+      "numero": "13",
+      "nombre": "Schweizerischer Nationalpark",
+      "canton": [
+        "GR"
+      ],
+      "region": "etapa-2",
+      "categoria": "naturaleza",
+      "coordenadas": {
+        "lat": 46.66377,
+        "lon": 10.21124
+      },
+      "altitud": 1797,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/destinations/swiss-national-park/",
+      "imagen": {
+        "fondo": "img/fondos/parque-nacional.webp",
+        "miniatura": "img/fondos/parque-nacional-mini.webp",
+        "silueta": "img/siluetas/parque-nacional.webp",
+        "autor": "Hansueli Krapf (Simisa)",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Swiss_National_Park_045.JPG"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "muestair",
+      "numero": "14",
+      "nombre": "Kloster St. Johann, Müstair",
+      "canton": [
+        "GR"
+      ],
+      "region": "etapa-2",
+      "categoria": "UNESCO",
+      "coordenadas": {
+        "lat": 46.62929,
+        "lon": 10.44856
+      },
+      "altitud": 1246,
+      "rareza": "brillante",
+      "unesco": "patrimonio",
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/benedictine-monastery-st-johann/",
+      "imagen": {
+        "fondo": "img/fondos/muestair.webp",
+        "miniatura": "img/fondos/muestair-mini.webp",
+        "silueta": "img/siluetas/muestair.webp",
+        "autor": "Roland Zumbühl (picswiss.ch)",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Picswiss_GR-80-06_M%C3%BCstair_%28M%C3%BCnster%29_mit_Clostra_San_Jon_%28Kloster_St_Johann%29.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "muottas-muragl",
+      "numero": "15",
+      "nombre": "Muottas Muragl",
+      "canton": [
+        "GR"
+      ],
+      "region": "etapa-2",
+      "categoria": "naturaleza",
+      "coordenadas": {
+        "lat": 46.52165,
+        "lon": 9.9018
+      },
+      "altitud": 2456,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/destinations/muottas-muragl/",
+      "imagen": {
+        "fondo": "img/fondos/muottas-muragl.webp",
+        "miniatura": "img/fondos/muottas-muragl-mini.webp",
+        "silueta": "img/siluetas/muottas-muragl.webp",
+        "autor": "Adrian Michael (Parpan05)",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Muottas_Muragl3.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "st-moritz",
+      "numero": "16",
+      "nombre": "St. Moritz",
+      "canton": [
+        "GR"
+      ],
+      "region": "etapa-2",
+      "categoria": "pueblo",
+      "coordenadas": {
+        "lat": 46.4938,
+        "lon": 9.8459
+      },
+      "altitud": 1768,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "photo-spot",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/photo-spot-engadine-st-moritz/",
+      "imagen": {
+        "fondo": "img/fondos/st-moritz.webp",
+        "miniatura": "img/fondos/st-moritz-mini.webp",
+        "silueta": "img/siluetas/st-moritz.webp",
+        "autor": "Enslin",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:St-Moritzersee2005.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "sils-maloja",
+      "numero": "17",
+      "nombre": "Silsersee · Maloja",
+      "canton": [
+        "GR"
+      ],
+      "region": "etapa-3",
+      "categoria": "lago",
+      "coordenadas": {
+        "lat": 46.40395,
+        "lon": 9.69804
+      },
+      "altitud": 1807,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "photo-spot",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/photo-spot-maloja/",
+      "imagen": {
+        "fondo": "img/fondos/sils-maloja.webp",
+        "miniatura": "img/fondos/sils-maloja-mini.webp",
+        "silueta": "img/siluetas/sils-maloja.webp",
+        "autor": "Roland Zumbühl (picswiss.ch)",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Silsersee.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "julier",
+      "numero": "18",
+      "nombre": "Julierpass",
+      "canton": [
+        "GR"
+      ],
+      "region": "etapa-3",
+      "categoria": "puerto alpino",
+      "coordenadas": {
+        "lat": 46.47222,
+        "lon": 9.72795
+      },
+      "altitud": 2284,
+      "rareza": "brillante",
+      "unesco": null,
+      "origen": "puerto",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/julier-pass-route/",
+      "imagen": {
+        "fondo": "img/fondos/julier.webp",
+        "miniatura": "img/fondos/julier-mini.webp",
+        "silueta": "img/siluetas/julier.webp",
+        "autor": "Capricorn4049",
+        "licencia": "CC BY-SA 4.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Julierpass_with_Juliertheater_%28Origen_Festival_Cultural%29_2_%28cropped%29.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "ferrocarril-retico",
+      "numero": "19",
+      "nombre": "Rhätische Bahn Albula/Bernina",
+      "canton": [
+        "GR"
+      ],
+      "region": "etapa-3",
+      "categoria": "UNESCO",
+      "coordenadas": {
+        "lat": 46.68095,
+        "lon": 9.676
+      },
+      "altitud": 997,
+      "rareza": "brillante",
+      "unesco": "patrimonio",
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/rhaetian-railway-albulabernina/",
+      "imagen": {
+        "fondo": "img/fondos/ferrocarril-retico.webp",
+        "miniatura": "img/fondos/ferrocarril-retico-mini.webp",
+        "silueta": "img/siluetas/ferrocarril-retico.webp",
+        "autor": "David Gubler (Kabelleger, bahnbilder.ch)",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:RhB_Ge_4-4_III_UNESCO_Weltkulturerbe_auf_Landwasserviadukt.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "viamala",
+      "numero": "20",
+      "nombre": "Viamala-Schlucht",
+      "canton": [
+        "GR"
+      ],
+      "region": "etapa-3",
+      "categoria": "naturaleza",
+      "coordenadas": {
+        "lat": 46.66793,
+        "lon": 9.448
+      },
+      "altitud": 1042,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "photo-spot",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/photo-spot-viamala-gorge/",
+      "imagen": {
+        "fondo": "img/fondos/viamala.webp",
+        "miniatura": "img/fondos/viamala-mini.webp",
+        "silueta": "img/siluetas/viamala.webp",
+        "autor": "Biovit",
+        "licencia": "Dominio público",
+        "licencia_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Via_Mala.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "san-bernardino",
+      "numero": "21",
+      "nombre": "Passo del San Bernardino",
+      "canton": [
+        "GR"
+      ],
+      "region": "etapa-3",
+      "categoria": "puerto alpino",
+      "coordenadas": {
+        "lat": 46.49714,
+        "lon": 9.17114
+      },
+      "altitud": 2065,
+      "rareza": "brillante",
+      "unesco": null,
+      "origen": "puerto",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/photo-spot-san-bernardino/",
+      "imagen": {
+        "fondo": "img/fondos/san-bernardino.webp",
+        "miniatura": "img/fondos/san-bernardino-mini.webp",
+        "silueta": "img/siluetas/san-bernardino.webp",
+        "autor": "Rikki Mitterer",
+        "licencia": "CC BY-SA 4.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:SanBernhardino-Hospitz-See-01E.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "bellinzona",
+      "numero": "22",
+      "nombre": "Castelli di Bellinzona",
+      "canton": [
+        "TI"
+      ],
+      "region": "etapa-3",
+      "categoria": "UNESCO",
+      "coordenadas": {
+        "lat": 46.19304,
+        "lon": 9.0225
+      },
+      "altitud": 278,
+      "rareza": "brillante",
+      "unesco": "patrimonio",
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/castles-of-bellinzona/",
+      "imagen": {
+        "fondo": "img/fondos/bellinzona.webp",
+        "miniatura": "img/fondos/bellinzona-mini.webp",
+        "silueta": "img/siluetas/bellinzona.webp",
+        "autor": "Massimo Macconi",
+        "licencia": "Dominio público",
+        "licencia_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Castelli.JPG"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "gotardo",
+      "numero": "23",
+      "nombre": "Passo del San Gottardo",
+      "canton": [
+        "TI"
+      ],
+      "region": "etapa-4",
+      "categoria": "puerto alpino",
+      "coordenadas": {
+        "lat": 46.55931,
+        "lon": 8.56116
+      },
+      "altitud": 2106,
+      "rareza": "brillante",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/st-gotthard-pass-nostalgia-on-the-tremola/",
+      "imagen": {
+        "fondo": "img/fondos/gotardo.webp",
+        "miniatura": "img/fondos/gotardo-mini.webp",
+        "silueta": "img/siluetas/gotardo.webp",
+        "autor": "Adrian Michael (Parpan05)",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Gotthardhospiz_2011.JPG"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "furka",
+      "numero": "24",
+      "nombre": "Furkapass",
+      "canton": [
+        "VS",
+        "UR"
+      ],
+      "region": "etapa-4",
+      "categoria": "puerto alpino",
+      "coordenadas": {
+        "lat": 46.57258,
+        "lon": 8.41504
+      },
+      "altitud": 2429,
+      "rareza": "brillante",
+      "unesco": null,
+      "origen": "puerto",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/photo-spot-furka/",
+      "imagen": {
+        "fondo": "img/fondos/furka.webp",
+        "miniatura": "img/fondos/furka-mini.webp",
+        "silueta": "img/siluetas/furka.webp",
+        "autor": "Zairon",
+        "licencia": "CC BY-SA 4.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Wallis_Furkapass_Hotel_Belvedere_1.JPG"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "aletsch",
+      "numero": "25",
+      "nombre": "Aletsch Arena",
+      "canton": [
+        "VS"
+      ],
+      "region": "etapa-4",
+      "categoria": "UNESCO",
+      "coordenadas": {
+        "lat": 46.41158,
+        "lon": 8.07563
+      },
+      "altitud": 2639,
+      "rareza": "brillante",
+      "unesco": "patrimonio",
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/destinations/aletsch-arena/",
+      "imagen": {
+        "fondo": "img/fondos/aletsch.webp",
+        "miniatura": "img/fondos/aletsch-mini.webp",
+        "silueta": "img/siluetas/aletsch.webp",
+        "autor": "Christian David (Espandero)",
+        "licencia": "CC BY-SA 4.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Glacier_d%27Aletsch_-_2021.jpg"
+      },
+      "foto_mia": "fotos/aletsch.jpg",
+      "foto_de_prueba": true,
+      "foto_credito": {
+        "autor": "Ernst Bürki",
+        "licencia": "Licencia de Unsplash",
+        "fuente": "https://unsplash.com/photos/cxjA69PbKNk"
+      },
+      "fecha_visita": "2026-07-22",
+      "nota_personal": "FOTO DE PRUEBA (Ernst Bürki, Unsplash). Bórrala cuando pegues la tuya.",
+      "visitado": true
+    },
+    {
+      "id": "matterhorn",
+      "numero": "26",
+      "nombre": "Matterhorn",
+      "canton": [
+        "VS"
+      ],
+      "region": "etapa-4",
+      "categoria": "naturaleza",
+      "coordenadas": {
+        "lat": 45.97641,
+        "lon": 7.65861
+      },
+      "altitud": 4478,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/destinations/matterhorn-4478-m-asl-landmark-of-switzerland/",
+      "imagen": {
+        "fondo": "img/fondos/matterhorn.webp",
+        "miniatura": "img/fondos/matterhorn-mini.webp",
+        "silueta": "img/siluetas/matterhorn.webp",
+        "autor": "Roy Egloff",
+        "licencia": "CC BY-SA 4.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:CH.VS.Zermatt_2021-10-17_Matterhorn_8726.jpg"
+      },
+      "foto_mia": "fotos/matterhorn.jpg",
+      "foto_de_prueba": true,
+      "foto_credito": {
+        "autor": "Nils Leonhardt",
+        "licencia": "Licencia de Unsplash",
+        "fuente": "https://unsplash.com/photos/S3zopd8_5OY"
+      },
+      "fecha_visita": "2026-07-24",
+      "nota_personal": "FOTO DE PRUEBA (Nils Leonhardt, Unsplash). Bórrala cuando pegues la tuya.",
+      "visitado": true
+    },
+    {
+      "id": "grimentz",
+      "numero": "27",
+      "nombre": "Grimentz",
+      "canton": [
+        "VS"
+      ],
+      "region": "etapa-5",
+      "categoria": "pueblo",
+      "coordenadas": {
+        "lat": 46.18099,
+        "lon": 7.57514
+      },
+      "altitud": 1605,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/destinations/grimentz/",
+      "imagen": {
+        "fondo": "img/fondos/grimentz.webp",
+        "miniatura": "img/fondos/grimentz-mini.webp",
+        "silueta": "img/siluetas/grimentz.webp",
+        "autor": "Christian David (Espandero)",
+        "licencia": "CC BY-SA 4.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Grimentz_-_ao%C3%BBt_2022.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "saint-maurice",
+      "numero": "28",
+      "nombre": "Abbaye de Saint-Maurice",
+      "canton": [
+        "VS"
+      ],
+      "region": "etapa-5",
+      "categoria": "pueblo",
+      "coordenadas": {
+        "lat": 46.21928,
+        "lon": 7.00327
+      },
+      "altitud": 417,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/abbey-basilica-monastery-treasure/",
+      "imagen": {
+        "fondo": "img/fondos/saint-maurice.webp",
+        "miniatura": "img/fondos/saint-maurice-mini.webp",
+        "silueta": "img/siluetas/saint-maurice.webp",
+        "autor": "Lcs74",
+        "licencia": "CC BY-SA 4.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Abbaye_de_Saint-Maurice.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "chillon",
+      "numero": "29",
+      "nombre": "Château de Chillon",
+      "canton": [
+        "VD"
+      ],
+      "region": "etapa-5",
+      "categoria": "pueblo",
+      "coordenadas": {
+        "lat": 46.41454,
+        "lon": 6.92744
+      },
+      "altitud": 385,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/chillon-castle/",
+      "imagen": {
+        "fondo": "img/fondos/chillon.webp",
+        "miniatura": "img/fondos/chillon-mini.webp",
+        "silueta": "img/siluetas/chillon.webp",
+        "autor": "Zacharie Grossen",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Castle_of_Chillon_N.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "lavaux",
+      "numero": "30",
+      "nombre": "Lavaux",
+      "canton": [
+        "VD"
+      ],
+      "region": "etapa-5",
+      "categoria": "UNESCO",
+      "coordenadas": {
+        "lat": 46.49113,
+        "lon": 6.74781
+      },
+      "altitud": 455,
+      "rareza": "brillante",
+      "unesco": "patrimonio",
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/destinations/lavaux-vineyard-terraces/",
+      "imagen": {
+        "fondo": "img/fondos/lavaux.webp",
+        "miniatura": "img/fondos/lavaux-mini.webp",
+        "silueta": "img/siluetas/lavaux.webp",
+        "autor": "Lorenz Poffet (Gillesvillage)",
+        "licencia": "CC BY-SA 4.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Lavaux_Switzerland.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "villa-le-lac",
+      "numero": "31",
+      "nombre": "Villa « Le Lac », Corseaux",
+      "canton": [
+        "VD"
+      ],
+      "region": "etapa-5",
+      "categoria": "UNESCO",
+      "coordenadas": {
+        "lat": 46.46841,
+        "lon": 6.82945
+      },
+      "altitud": 375,
+      "rareza": "brillante",
+      "unesco": "patrimonio",
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/architectural-works-by-le-corbusier-declared-unesco-world-heritage-sites/",
+      "imagen": {
+        "fondo": "img/fondos/villa-le-lac.webp",
+        "miniatura": "img/fondos/villa-le-lac-mini.webp",
+        "silueta": "img/siluetas/villa-le-lac.webp",
+        "autor": "Mxbchr",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:CorbuVevey_6361.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "museo-olimpico",
+      "numero": "32",
+      "nombre": "Musée Olympique",
+      "canton": [
+        "VD"
+      ],
+      "region": "etapa-6",
+      "categoria": "ciudad",
+      "coordenadas": {
+        "lat": 46.50862,
+        "lon": 6.63416
+      },
+      "altitud": 401,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/the-olympic-museum/",
+      "imagen": {
+        "fondo": "img/fondos/museo-olimpico.webp",
+        "miniatura": "img/fondos/museo-olimpico-mini.webp",
+        "silueta": "img/siluetas/museo-olimpico.webp",
+        "autor": "Tom Key",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Lausanne%2C_Switzerland_-_panoramio_%2834%29.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "morges",
+      "numero": "33",
+      "nombre": "Port de Morges",
+      "canton": [
+        "VD"
+      ],
+      "region": "etapa-6",
+      "categoria": "lago",
+      "coordenadas": {
+        "lat": 46.5085,
+        "lon": 6.4988
+      },
+      "altitud": 374,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "photo-spot",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/photo-spot-the-port-of-morges/",
+      "imagen": {
+        "fondo": "img/fondos/morges.webp",
+        "miniatura": "img/fondos/morges-mini.webp",
+        "silueta": "img/siluetas/morges.webp",
+        "autor": "Slatin",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_Morges_depuis_le_vieux_port.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "vallorbe",
+      "numero": "34",
+      "nombre": "Grottes de Vallorbe",
+      "canton": [
+        "VD"
+      ],
+      "region": "etapa-6",
+      "categoria": "naturaleza",
+      "coordenadas": {
+        "lat": 46.69798,
+        "lon": 6.34574
+      },
+      "altitud": 785,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "photo-spot",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/photo-spot-caves-of-vallorbe/",
+      "imagen": {
+        "fondo": "img/fondos/vallorbe.webp",
+        "miniatura": "img/fondos/vallorbe-mini.webp",
+        "silueta": "img/siluetas/vallorbe.webp",
+        "autor": "Dietrich Michael Weidmann",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Vallorbe-Groto_069.JPG"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "creux-du-van",
+      "numero": "35",
+      "nombre": "Creux du Van",
+      "canton": [
+        "NE"
+      ],
+      "region": "etapa-6",
+      "categoria": "naturaleza",
+      "coordenadas": {
+        "lat": 46.92867,
+        "lon": 6.72477
+      },
+      "altitud": 1463,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/route/creux-du-van-round-trip-in-the-val-de-travers/",
+      "imagen": {
+        "fondo": "img/fondos/creux-du-van.webp",
+        "miniatura": "img/fondos/creux-du-van-mini.webp",
+        "silueta": "img/siluetas/creux-du-van.webp",
+        "autor": "Roland Zumbühl (picswiss.ch)",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Creux_du_Van.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "palafitos-hauterive",
+      "numero": "36",
+      "nombre": "Laténium, Hauterive",
+      "canton": [
+        "NE"
+      ],
+      "region": "etapa-7",
+      "categoria": "UNESCO",
+      "coordenadas": {
+        "lat": 47.00714,
+        "lon": 6.97125
+      },
+      "altitud": 434,
+      "rareza": "brillante",
+      "unesco": "patrimonio",
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/pile-dwellings-around-the-alps/",
+      "imagen": {
+        "fondo": "img/fondos/palafitos-hauterive.webp",
+        "miniatura": "img/fondos/palafitos-hauterive-mini.webp",
+        "silueta": "img/siluetas/palafitos-hauterive.webp",
+        "autor": "Gab01",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Latenium-3.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "erlach",
+      "numero": "37",
+      "nombre": "Erlach",
+      "canton": [
+        "BE"
+      ],
+      "region": "etapa-7",
+      "categoria": "lago",
+      "coordenadas": {
+        "lat": 47.04221,
+        "lon": 7.09793
+      },
+      "altitud": 433,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "photo-spot",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/photo-spot-erlach/",
+      "imagen": {
+        "fondo": "img/fondos/erlach.webp",
+        "miniatura": "img/fondos/erlach-mini.webp",
+        "silueta": "img/siluetas/erlach.webp",
+        "autor": "JoachimKohler-HB",
+        "licencia": "CC BY-SA 4.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Altstadth%C3%BCgel_Erlach_am_Bielersee.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "murten",
+      "numero": "38",
+      "nombre": "Murten / Morat",
+      "canton": [
+        "FR"
+      ],
+      "region": "etapa-7",
+      "categoria": "pueblo",
+      "coordenadas": {
+        "lat": 46.92573,
+        "lon": 7.11744
+      },
+      "altitud": 448,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/destinations/murtenmorat/",
+      "imagen": {
+        "fondo": "img/fondos/murten.webp",
+        "miniatura": "img/fondos/murten-mini.webp",
+        "silueta": "img/siluetas/murten.webp",
+        "autor": "Tony Castle",
+        "licencia": "CC BY-SA 4.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Murten_%28Suiza%29._Tejados_2.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "friburgo",
+      "numero": "39",
+      "nombre": "Fribourg / Freiburg",
+      "canton": [
+        "FR"
+      ],
+      "region": "etapa-7",
+      "categoria": "ciudad",
+      "coordenadas": {
+        "lat": 46.80615,
+        "lon": 7.16315
+      },
+      "altitud": 587,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/destinations/fribourg/",
+      "imagen": {
+        "fondo": "img/fondos/friburgo.webp",
+        "miniatura": "img/fondos/friburgo-mini.webp",
+        "silueta": "img/siluetas/friburgo.webp",
+        "autor": "Norbert Aepli",
+        "licencia": "CC BY 2.5",
+        "licencia_url": "https://creativecommons.org/licenses/by/2.5/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Panorama_Fribourg_107.JPG"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "gruyeres",
+      "numero": "40",
+      "nombre": "Gruyères",
+      "canton": [
+        "FR"
+      ],
+      "region": "etapa-7",
+      "categoria": "pueblo",
+      "coordenadas": {
+        "lat": 46.58466,
+        "lon": 7.08399
+      },
+      "altitud": 828,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/destinations/gruyeres-gruyeres/",
+      "imagen": {
+        "fondo": "img/fondos/gruyeres.webp",
+        "miniatura": "img/fondos/gruyeres-mini.webp",
+        "silueta": "img/siluetas/gruyeres.webp",
+        "autor": "Christian David (Espandero)",
+        "licencia": "CC BY-SA 4.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Gruy%C3%A8res_et_sa_cit%C3%A9_m%C3%A9di%C3%A9vale.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "gstaad",
+      "numero": "41",
+      "nombre": "Gstaad",
+      "canton": [
+        "BE"
+      ],
+      "region": "etapa-7",
+      "categoria": "pueblo",
+      "coordenadas": {
+        "lat": 46.474,
+        "lon": 7.28991
+      },
+      "altitud": 1101,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/destinations/gstaad/",
+      "imagen": {
+        "fondo": "img/fondos/gstaad.webp",
+        "miniatura": "img/fondos/gstaad-mini.webp",
+        "silueta": "img/siluetas/gstaad.webp",
+        "autor": "GstaadTourismus",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:GstaadPanoramaVillage.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "spiez",
+      "numero": "42",
+      "nombre": "Spiez",
+      "canton": [
+        "BE"
+      ],
+      "region": "etapa-7",
+      "categoria": "lago",
+      "coordenadas": {
+        "lat": 46.68929,
+        "lon": 7.68862
+      },
+      "altitud": 559,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "photo-spot",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/photo-spot-spiez/",
+      "imagen": {
+        "fondo": "img/fondos/spiez.webp",
+        "miniatura": "img/fondos/spiez-mini.webp",
+        "silueta": "img/siluetas/spiez.webp",
+        "autor": "Yesuitus2001",
+        "licencia": "CC BY-SA 2.5",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Spiez.JPG"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "interlaken",
+      "numero": "43",
+      "nombre": "Höhematte, Interlaken",
+      "canton": [
+        "BE"
+      ],
+      "region": "etapa-7",
+      "categoria": "pueblo",
+      "coordenadas": {
+        "lat": 46.68598,
+        "lon": 7.86003
+      },
+      "altitud": 568,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "photo-spot",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/photo-spot-hoehematte-interlaken/",
+      "imagen": {
+        "fondo": "img/fondos/interlaken.webp",
+        "miniatura": "img/fondos/interlaken-mini.webp",
+        "silueta": "img/siluetas/interlaken.webp",
+        "autor": "Bohao Zhao",
+        "licencia": "CC BY 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:H%C3%B6hematte_Interlaken_-_panoramio.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "lago-brienz",
+      "numero": "44",
+      "nombre": "Brienzersee",
+      "canton": [
+        "BE"
+      ],
+      "region": "etapa-7",
+      "categoria": "lago",
+      "coordenadas": {
+        "lat": 46.75435,
+        "lon": 8.03045
+      },
+      "altitud": 568,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/destinations/lake-brienz/",
+      "imagen": {
+        "fondo": "img/fondos/lago-brienz.webp",
+        "miniatura": "img/fondos/lago-brienz-mini.webp",
+        "silueta": "img/siluetas/lago-brienz.webp",
+        "autor": "Carsten Steger",
+        "licencia": "CC BY-SA 4.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_Lake_Brienz_%28view_from_the_southwest%29.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "jungfraujoch",
+      "numero": "45",
+      "nombre": "Jungfraujoch",
+      "canton": [
+        "BE",
+        "VS"
+      ],
+      "region": "etapa-7",
+      "categoria": "UNESCO",
+      "coordenadas": {
+        "lat": 46.54747,
+        "lon": 7.98209
+      },
+      "altitud": 3454,
+      "rareza": "brillante",
+      "unesco": "patrimonio",
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/destinations/jungfraujoch/",
+      "imagen": {
+        "fondo": "img/fondos/jungfraujoch.webp",
+        "miniatura": "img/fondos/jungfraujoch-mini.webp",
+        "silueta": "img/siluetas/jungfraujoch.webp",
+        "autor": "Roy Egloff",
+        "licencia": "CC BY-SA 4.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:CH.BE.Grindelwald_2021-04-20_Jungfraujoch_Sphinx-Observatory.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "berna",
+      "numero": "46",
+      "nombre": "Altstadt von Bern",
+      "canton": [
+        "BE"
+      ],
+      "region": "etapa-7",
+      "categoria": "UNESCO",
+      "coordenadas": {
+        "lat": 46.94791,
+        "lon": 7.44791
+      },
+      "altitud": 541,
+      "rareza": "brillante",
+      "unesco": "patrimonio",
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/old-city-of-bern/",
+      "imagen": {
+        "fondo": "img/fondos/berna.webp",
+        "miniatura": "img/fondos/berna-mini.webp",
+        "silueta": "img/siluetas/berna.webp",
+        "autor": "Amstuzmarco",
+        "licencia": "Dominio público",
+        "licencia_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Bern_luftaufnahme-2num.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "emmental",
+      "numero": "47",
+      "nombre": "Emmentaler Schaukäserei",
+      "canton": [
+        "BE"
+      ],
+      "region": "etapa-8",
+      "categoria": "pueblo",
+      "coordenadas": {
+        "lat": 47.06381,
+        "lon": 7.73123
+      },
+      "altitud": 802,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/emmentaler-aop-show-dairy/",
+      "imagen": {
+        "fondo": "img/fondos/emmental.webp",
+        "miniatura": "img/fondos/emmental-mini.webp",
+        "silueta": "img/siluetas/emmental.webp",
+        "autor": "Хрюша (Chriusha)",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Schaukaeserei_Affoltern_01_09.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "entlebuch",
+      "numero": "48",
+      "nombre": "UNESCO Biosphäre Entlebuch",
+      "canton": [
+        "LU"
+      ],
+      "region": "etapa-8",
+      "categoria": "naturaleza",
+      "coordenadas": {
+        "lat": 46.95018,
+        "lon": 8.01517
+      },
+      "altitud": 716,
+      "rareza": "brillante",
+      "unesco": "biosfera",
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/destinations/unesco-biosphere-entlebuch/",
+      "imagen": {
+        "fondo": "img/fondos/entlebuch.webp",
+        "miniatura": "img/fondos/entlebuch-mini.webp",
+        "silueta": "img/siluetas/entlebuch.webp",
+        "autor": "Simon Koopmann",
+        "licencia": "CC BY-SA 2.0 DE",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/2.0/de/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Aebnistettenflue_entlebuch_03.JPG"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "hallwyl",
+      "numero": "49",
+      "nombre": "Schloss Hallwyl",
+      "canton": [
+        "AG"
+      ],
+      "region": "etapa-8",
+      "categoria": "pueblo",
+      "coordenadas": {
+        "lat": 47.32267,
+        "lon": 8.19411
+      },
+      "altitud": 451,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/hallwyl-castle-cultural-and-outdoor-experience/",
+      "imagen": {
+        "fondo": "img/fondos/hallwyl.webp",
+        "miniatura": "img/fondos/hallwyl-mini.webp",
+        "silueta": "img/siluetas/hallwyl.webp",
+        "autor": "Tage Olsin",
+        "licencia": "CC BY-SA 2.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Schloss_Hallwyl_July_21st_2005.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "kapellbruecke",
+      "numero": "50",
+      "nombre": "Kapellbrücke, Luzern",
+      "canton": [
+        "LU"
+      ],
+      "region": "etapa-8",
+      "categoria": "ciudad",
+      "coordenadas": {
+        "lat": 47.05157,
+        "lon": 8.30742
+      },
+      "altitud": 433,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/chapel-bridge-and-water-tower/",
+      "imagen": {
+        "fondo": "img/fondos/kapellbruecke.webp",
+        "miniatura": "img/fondos/kapellbruecke-mini.webp",
+        "silueta": "img/siluetas/kapellbruecke.webp",
+        "autor": "Alexander Savin (A.Savin)",
+        "licencia": "Licencia Arte Libre 1.3",
+        "licencia_url": "https://artlibre.org/licence/lal/en/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Luzern_asv2022-10_Kapellbr%C3%BCcke_img3.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "pilatus",
+      "numero": "51",
+      "nombre": "Pilatus Kulm",
+      "canton": [
+        "NW",
+        "OW",
+        "LU"
+      ],
+      "region": "etapa-8",
+      "categoria": "naturaleza",
+      "coordenadas": {
+        "lat": 46.97968,
+        "lon": 8.25643
+      },
+      "altitud": 2065,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/destinations/pilatus/",
+      "imagen": {
+        "fondo": "img/fondos/pilatus.webp",
+        "miniatura": "img/fondos/pilatus-mini.webp",
+        "silueta": "img/siluetas/pilatus.webp",
+        "autor": "Johnny Chicago",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Pilatus_%28mountain%29.JPG"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "rigi",
+      "numero": "52",
+      "nombre": "Rigi Kulm",
+      "canton": [
+        "SZ",
+        "LU"
+      ],
+      "region": "etapa-8",
+      "categoria": "naturaleza",
+      "coordenadas": {
+        "lat": 47.05678,
+        "lon": 8.48529
+      },
+      "altitud": 1798,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "photo-spot",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/photo-spot-rigi/",
+      "imagen": {
+        "fondo": "img/fondos/rigi.webp",
+        "miniatura": "img/fondos/rigi-mini.webp",
+        "silueta": "img/siluetas/rigi.webp",
+        "autor": "Andrew Bossi",
+        "licencia": "CC BY-SA 2.5",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:7020_-_Meggen_-_Rainbow_over_Rigi.JPG"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "brunnen",
+      "numero": "53",
+      "nombre": "Brunnen",
+      "canton": [
+        "SZ"
+      ],
+      "region": "etapa-8",
+      "categoria": "lago",
+      "coordenadas": {
+        "lat": 46.99447,
+        "lon": 8.60574
+      },
+      "altitud": 435,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "photo-spot",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/photo-spot-lake-lucerne/",
+      "imagen": {
+        "fondo": "img/fondos/brunnen.webp",
+        "miniatura": "img/fondos/brunnen-mini.webp",
+        "silueta": "img/siluetas/brunnen.webp",
+        "autor": "Andreas Faessler",
+        "licencia": "CC BY-SA 4.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Brunnen_see.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "capilla-tell",
+      "numero": "54",
+      "nombre": "Tellskapelle, Sisikon",
+      "canton": [
+        "UR"
+      ],
+      "region": "etapa-8",
+      "categoria": "lago",
+      "coordenadas": {
+        "lat": 46.93264,
+        "lon": 8.61186
+      },
+      "altitud": 439,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/tells-chapel/",
+      "imagen": {
+        "fondo": "img/fondos/capilla-tell.webp",
+        "miniatura": "img/fondos/capilla-tell-mini.webp",
+        "silueta": "img/siluetas/capilla-tell.webp",
+        "autor": "Roland Zumbühl (picswiss.ch)",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Tellskapelle2000.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "einsiedeln",
+      "numero": "55",
+      "nombre": "Kloster Einsiedeln",
+      "canton": [
+        "SZ"
+      ],
+      "region": "etapa-8",
+      "categoria": "pueblo",
+      "coordenadas": {
+        "lat": 47.126,
+        "lon": 8.75391
+      },
+      "altitud": 908,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/destinations/einsiedeln/",
+      "imagen": {
+        "fondo": "img/fondos/einsiedeln.webp",
+        "miniatura": "img/fondos/einsiedeln-mini.webp",
+        "silueta": "img/siluetas/einsiedeln.webp",
+        "autor": "Markus Bernet",
+        "licencia": "CC BY-SA 2.5",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Kloster_Einsiedeln_001.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "basilea",
+      "numero": "56",
+      "nombre": "Basel",
+      "canton": [
+        "BS"
+      ],
+      "region": "accesos",
+      "categoria": "ciudad",
+      "coordenadas": {
+        "lat": 47.55639,
+        "lon": 7.5925
+      },
+      "altitud": 270,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/destinations/basel/",
+      "imagen": {
+        "fondo": "img/fondos/basilea.webp",
+        "miniatura": "img/fondos/basilea-mini.webp",
+        "silueta": "img/siluetas/basilea.webp",
+        "autor": "Wladyslaw Sojka (Taxiarchos228)",
+        "licencia": "Licencia Arte Libre 1.3",
+        "licencia_url": "https://artlibre.org/licence/lal/en/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Basler_-_Basler_M%C3%BCnster_Westfassade.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "saint-ursanne",
+      "numero": "57",
+      "nombre": "Saint-Ursanne",
+      "canton": [
+        "JU"
+      ],
+      "region": "accesos",
+      "categoria": "pueblo",
+      "coordenadas": {
+        "lat": 47.36426,
+        "lon": 7.15546
+      },
+      "altitud": 432,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/destinations/st-ursanne-clos-du-doubs/",
+      "imagen": {
+        "fondo": "img/fondos/saint-ursanne.webp",
+        "miniatura": "img/fondos/saint-ursanne-mini.webp",
+        "silueta": "img/siluetas/saint-ursanne.webp",
+        "autor": "Roland Zumbühl (picswiss.ch)",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Saint-Ursanne_Stadt.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "chaux-de-fonds",
+      "numero": "58",
+      "nombre": "La Chaux-de-Fonds / Le Locle",
+      "canton": [
+        "NE"
+      ],
+      "region": "accesos",
+      "categoria": "UNESCO",
+      "coordenadas": {
+        "lat": 47.09846,
+        "lon": 6.82432
+      },
+      "altitud": 992,
+      "rareza": "brillante",
+      "unesco": "patrimonio",
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/la-chaux-de-fonds-le-locle/",
+      "imagen": {
+        "fondo": "img/fondos/chaux-de-fonds.webp",
+        "miniatura": "img/fondos/chaux-de-fonds-mini.webp",
+        "silueta": "img/siluetas/chaux-de-fonds.webp",
+        "autor": "Momox de Morteau",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Patrimoine_urbain_horloger_8.JPG"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "jet-deau",
+      "numero": "59",
+      "nombre": "Jet d'eau, Genève",
+      "canton": [
+        "GE"
+      ],
+      "region": "accesos",
+      "categoria": "ciudad",
+      "coordenadas": {
+        "lat": 46.20737,
+        "lon": 6.15587
+      },
+      "altitud": 372,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/jet-deau/",
+      "imagen": {
+        "fondo": "img/fondos/jet-deau.webp",
+        "miniatura": "img/fondos/jet-deau-mini.webp",
+        "silueta": "img/siluetas/jet-deau.webp",
+        "autor": "Wikibusters",
+        "licencia": "CC BY-SA 4.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Jet_d%27eau_de_Gen%C3%A8ve_%28swiss%29.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "monte-san-giorgio",
+      "numero": "60",
+      "nombre": "Monte San Giorgio",
+      "canton": [
+        "TI"
+      ],
+      "region": "accesos",
+      "categoria": "UNESCO",
+      "coordenadas": {
+        "lat": 45.91399,
+        "lon": 8.94978
+      },
+      "altitud": 1097,
+      "rareza": "brillante",
+      "unesco": "patrimonio",
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/monte-san-giorgio/",
+      "imagen": {
+        "fondo": "img/fondos/monte-san-giorgio.webp",
+        "miniatura": "img/fondos/monte-san-giorgio-mini.webp",
+        "silueta": "img/siluetas/monte-san-giorgio.webp",
+        "autor": "Roland Zumbühl (picswiss.ch)",
+        "licencia": "CC BY-SA 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Lake_Lugano.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "monte-bre",
+      "numero": "61",
+      "nombre": "Monte Brè",
+      "canton": [
+        "TI"
+      ],
+      "region": "accesos",
+      "categoria": "naturaleza",
+      "coordenadas": {
+        "lat": 46.00912,
+        "lon": 8.98751
+      },
+      "altitud": 925,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/monte-bre/",
+      "imagen": {
+        "fondo": "img/fondos/monte-bre.webp",
+        "miniatura": "img/fondos/monte-bre-mini.webp",
+        "silueta": "img/siluetas/monte-bre.webp",
+        "autor": "Adrian Michael (Parpan05)",
+        "licencia": "CC BY 3.0",
+        "licencia_url": "https://creativecommons.org/licenses/by/3.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Monte_Bre_April15.JPG"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "morcote",
+      "numero": "62",
+      "nombre": "Morcote",
+      "canton": [
+        "TI"
+      ],
+      "region": "accesos",
+      "categoria": "lago",
+      "coordenadas": {
+        "lat": 45.92842,
+        "lon": 8.90826
+      },
+      "altitud": 311,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "photo-spot",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/morcote-photo-spots/",
+      "imagen": {
+        "fondo": "img/fondos/morcote.webp",
+        "miniatura": "img/fondos/morcote-mini.webp",
+        "silueta": "img/siluetas/morcote.webp",
+        "autor": "Fabio, Fernanda e Mariana Leão",
+        "licencia": "Dominio público",
+        "licencia_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Morcote.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "ascona",
+      "numero": "63",
+      "nombre": "Ascona",
+      "canton": [
+        "TI"
+      ],
+      "region": "accesos",
+      "categoria": "pueblo",
+      "coordenadas": {
+        "lat": 46.15383,
+        "lon": 8.76907
+      },
+      "altitud": 196,
+      "rareza": "normal",
+      "unesco": null,
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/destinations/ascona/",
+      "imagen": {
+        "fondo": "img/fondos/ascona.webp",
+        "miniatura": "img/fondos/ascona-mini.webp",
+        "silueta": "img/siluetas/ascona.webp",
+        "autor": "Diriye Amey",
+        "licencia": "CC BY 2.0",
+        "licencia_url": "https://creativecommons.org/licenses/by/2.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Ascona_%2811440030045%29.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    },
+    {
+      "id": "lodano",
+      "numero": "64",
+      "nombre": "Valle di Lodano",
+      "canton": [
+        "TI"
+      ],
+      "region": "accesos",
+      "categoria": "UNESCO",
+      "coordenadas": {
+        "lat": 46.2506,
+        "lon": 8.6525
+      },
+      "altitud": 1072,
+      "rareza": "brillante",
+      "unesco": "patrimonio",
+      "origen": "highlight",
+      "enlace_oficial": "https://www.myswitzerland.com/en-ch/experiences/the-old-beech-forests-of-valle-di-lodano/",
+      "imagen": {
+        "fondo": "img/fondos/lodano.webp",
+        "miniatura": "img/fondos/lodano-mini.webp",
+        "silueta": "img/siluetas/lodano.webp",
+        "autor": "Marco Volken",
+        "licencia": "CC BY-SA 4.0",
+        "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fuente": "https://commons.wikimedia.org/wiki/File:Valle_di_Lodano_e_faggeta_sito_UNESCO.jpg"
+      },
+      "foto_mia": null,
+      "foto_de_prueba": false,
+      "fecha_visita": null,
+      "nota_personal": "",
+      "visitado": false
+    }
+  ]
+}

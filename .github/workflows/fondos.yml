@@ -1,0 +1,44 @@
+# Descarga desde Wikimedia Commons las fotos de fondo que falten, las convierte a
+# WebP (1600 px + miniatura + silueta) y las guarda en el repositorio.
+# Existe porque el entorno donde se creó el álbum tenía las descargas limitadas.
+name: Descargar fondos
+
+on:
+  workflow_dispatch:
+  push:
+    branches-ignore: [main]
+    paths:
+      - data/cromos.json
+      - scripts/fondos.mjs
+      - .github/workflows/fondos.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fondos-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  fondos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Descargar y optimizar
+        run: npm run fondos
+      - name: Guardar en el repositorio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add img/
+          if git diff --cached --quiet; then
+            echo "No hay imágenes nuevas."
+          else
+            git commit -m "Añadir fondos descargados de Wikimedia Commons"
+            git push
+          fi

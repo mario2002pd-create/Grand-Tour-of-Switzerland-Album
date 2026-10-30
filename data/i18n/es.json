@@ -1,0 +1,878 @@
+{
+  "_leeme": "Textos en español. Para añadir otro idioma copia este archivo como de.json o en.json y traduce los valores (no las claves).",
+  "idioma": "es",
+  "ui": {
+    "titulo": "Grand Tour of Switzerland",
+    "subtitulo": "Álbum de cromos",
+    "aviso_no_oficial": "Proyecto personal no oficial. Sin relación con Suiza Turismo ni con el Grand Tour of Switzerland.",
+    "contador": "{x} / {n} cromos pegados",
+    "abrir_album": "Abrir el álbum",
+    "toca_para_abrir": "Toca la tapa para abrir",
+    "nav_portada": "Portada",
+    "nav_album": "Álbum",
+    "nav_mapa": "Mapa",
+    "nav_stats": "Estadísticas",
+    "pagina": "Página {p} de {t}",
+    "anterior": "Página anterior",
+    "siguiente": "Página siguiente",
+    "buscar": "Buscar un sitio…",
+    "filtro_categoria": "Categoría",
+    "filtro_region": "Región",
+    "todas": "Todas",
+    "resultados": "{n} cromos",
+    "sin_resultados": "Ningún cromo coincide con la búsqueda.",
+    "hueco": "{num} {nombre}: hueco vacío",
+    "pegado": "{num} {nombre}: cromo pegado",
+    "brillante": "Brillante",
+    "normal": "Normal",
+    "foto_prueba": "Foto de prueba",
+    "cerrar": "Cerrar",
+    "girar": "Girar el cromo",
+    "reverso_sin_nota": "Todavía sin nota.",
+    "fecha_visita": "Visitado el",
+    "sin_visitar": "Aún no lo tienes",
+    "descripcion": "El lugar",
+    "curiosidades": "Curiosidades",
+    "mejor_epoca": "Mejor época",
+    "como_llegar": "Cómo llegar en transporte público",
+    "datos": "Datos",
+    "canton": "Cantón",
+    "altitud": "Altitud",
+    "coordenadas": "Coordenadas",
+    "categoria": "Categoría",
+    "region": "Región",
+    "rareza": "Rareza",
+    "enlace_oficial": "Página oficial (MySwitzerland)",
+    "aviso": "Aviso",
+    "credito": "Foto de fondo: {autor} · {licencia} · Wikimedia Commons",
+    "compartir": "Compartir cromo",
+    "compartiendo": "Generando imagen…",
+    "compartir_listo": "Imagen lista para Stories",
+    "descargar": "Descargar imagen",
+    "vista_previa": "Vista previa",
+    "vista_previa_ayuda": "Arrastra una foto a un hueco (o pulsa «Probar foto») para ver cómo quedaría. Solo se guarda en este navegador.",
+    "probar_foto": "Probar foto",
+    "quitar_prueba": "Quitar vista previa",
+    "exportar": "Exportar JSON",
+    "exportar_ayuda": "Descarga cromos.json con tus vistas previas marcadas como visitadas. Recuerda subir también las fotos a /fotos/.",
+    "modo_vista_previa": "Modo vista previa",
+    "en_vista_previa": "Vista previa (solo en tu navegador)",
+    "activar_giroscopio": "Activar brillo con movimiento",
+    "mapa_titulo": "Mapa del Grand Tour",
+    "mapa_leyenda_tengo": "Lo tengo",
+    "mapa_leyenda_falta": "Me falta",
+    "mapa_ruta": "Trazado aproximado (puntos de paso propios)",
+    "mapa_accesos": "Accesos y desvíos",
+    "ver_ficha": "Ver ficha",
+    "stats_titulo": "Estadísticas",
+    "stats_por_region": "Por región",
+    "stats_por_categoria": "Por categoría",
+    "stats_lagos": "Lagos",
+    "stats_puertos": "Puertos alpinos",
+    "stats_unesco": "Lugares UNESCO",
+    "stats_mas_alto": "El sitio más alto en el que has estado",
+    "stats_ninguno": "Pega tu primer cromo para verlo aquí.",
+    "stats_brillantes": "Brillantes",
+    "stats_total": "Total",
+    "nuevo_cromo": "¡Cromo nuevo!",
+    "creditos": "Créditos de las imágenes",
+    "creditos_ayuda": "Las fotos de fondo proceden de Wikimedia Commons; cada ficha muestra su autor y licencia.",
+    "fuente_puertos": "Los cinco puertos (Flüela, Julier, San Bernardino, San Gotardo y Furka) proceden de la lista de Routard y están confirmados en la página oficial de puertos alpinos del Grand Tour.",
+    "pie": "Mapa © colaboradores de OpenStreetMap"
+  },
+  "regiones": {
+    "etapa-1": {
+      "nombre": "Zúrich – Appenzell",
+      "etiqueta": "Etapa 1"
+    },
+    "etapa-2": {
+      "nombre": "Appenzell – St. Moritz",
+      "etiqueta": "Etapa 2"
+    },
+    "etapa-3": {
+      "nombre": "St. Moritz – Bellinzona",
+      "etiqueta": "Etapa 3"
+    },
+    "etapa-4": {
+      "nombre": "Bellinzona – Zermatt",
+      "etiqueta": "Etapa 4"
+    },
+    "etapa-5": {
+      "nombre": "Zermatt – Lausana",
+      "etiqueta": "Etapa 5"
+    },
+    "etapa-6": {
+      "nombre": "Lausana – Neuchâtel",
+      "etiqueta": "Etapa 6"
+    },
+    "etapa-7": {
+      "nombre": "Neuchâtel – Berna",
+      "etiqueta": "Etapa 7"
+    },
+    "etapa-8": {
+      "nombre": "Berna – Zúrich",
+      "etiqueta": "Etapa 8"
+    },
+    "accesos": {
+      "nombre": "Accesos al Grand Tour",
+      "etiqueta": "Accesos"
+    }
+  },
+  "categorias": {
+    "lago": "Lago",
+    "puerto alpino": "Puerto alpino",
+    "UNESCO": "UNESCO",
+    "ciudad": "Ciudad",
+    "naturaleza": "Naturaleza",
+    "pueblo": "Pueblo"
+  },
+  "rareza": {
+    "normal": "Normal",
+    "brillante": "Brillante"
+  },
+  "unesco": {
+    "patrimonio": "Patrimonio Mundial de la UNESCO",
+    "biosfera": "Reserva de la Biosfera de la UNESCO (no es Patrimonio Mundial)"
+  },
+  "origen": {
+    "highlight": "Uno de los 46 highlights oficiales",
+    "photo-spot": "Añadido desde los photo spots oficiales",
+    "puerto": "Puerto alpino añadido"
+  },
+  "cantones": {
+    "AG": "Argovia",
+    "AI": "Appenzell Rodas Interiores",
+    "AR": "Appenzell Rodas Exteriores",
+    "BE": "Berna",
+    "BS": "Basilea-Ciudad",
+    "FR": "Friburgo",
+    "GE": "Ginebra",
+    "GL": "Glaris",
+    "GR": "Grisones",
+    "JU": "Jura",
+    "LU": "Lucerna",
+    "NE": "Neuchâtel",
+    "NW": "Nidwalden",
+    "OW": "Obwalden",
+    "SG": "San Galo",
+    "SH": "Schaffhausen",
+    "SZ": "Schwyz",
+    "TG": "Turgovia",
+    "TI": "Tesino",
+    "UR": "Uri",
+    "VD": "Vaud",
+    "VS": "Valais",
+    "ZH": "Zúrich"
+  },
+  "cromos": {
+    "grossmuenster": {
+      "nombre": "Grossmünster",
+      "descripcion": "Las dos torres gemelas del Grossmünster son la silueta más reconocible de Zúrich. Esta iglesia románica, levantada entre finales del siglo XI y el XIII junto al río Limmat, fue el escenario desde el que Ulrico Zuinglio impulsó la Reforma protestante en 1519.",
+      "curiosidades": [
+        "Según la leyenda, Carlomagno fundó la iglesia sobre las tumbas de Félix y Régula, los patronos de la ciudad; su estatua sentada vigila desde la torre sur (el original está en la cripta).",
+        "Se puede subir a la torre Karlsturm por unos 187 escalones para ver el casco antiguo y el lago.",
+        "Las vidrieras combinan las de Augusto Giacometti (1933) con las de ágata y colores de Sigmar Polke (2009)."
+      ],
+      "mejor_epoca": "Todo el año. En diciembre el casco antiguo se llena de mercadillos navideños.",
+      "como_llegar": "Desde Zürich HB, unos 15 minutos a pie por el Limmatquai, o tranvía hasta Helmhaus o Bellevue."
+    },
+    "cataratas-rin": {
+      "nombre": "Cataratas del Rin",
+      "descripcion": "Es la cascada de mayor caudal de Europa: el Rin se precipita 23 metros a lo largo de unos 150 metros de anchura. Se formó al final de la última glaciación, hace unos 15 000 años, cuando el río tuvo que abrirse un nuevo cauce.",
+      "curiosidades": [
+        "En verano pueden pasar unos 600 m³ de agua por segundo.",
+        "Pequeñas barcas llevan a los visitantes hasta la roca central, que se puede subir por una escalera.",
+        "El castillo de Laufen, sobre la orilla sur, tiene pasarelas que se asoman casi encima del agua."
+      ],
+      "mejor_epoca": "De junio a julio, cuando el deshielo da el caudal máximo. Al atardecer la luz es preciosa.",
+      "como_llegar": "Tren a «Schloss Laufen am Rheinfall» (S-Bahn desde Winterthur o Schaffhausen) o a «Neuhausen Rheinfall»; ambas estaciones están a pocos minutos a pie."
+    },
+    "stein-am-rhein": {
+      "nombre": "Stein am Rhein",
+      "descripcion": "Un pueblo medieval casi intacto en el punto donde el Rin sale del lago Untersee. Su plaza del Ayuntamiento está rodeada de casas con fachadas pintadas al fresco y miradores de madera, y desde lo alto lo vigila el castillo de Hohenklingen.",
+      "curiosidades": [
+        "En 1972 recibió el primer Premio Wakker, el galardón suizo al cuidado del patrimonio urbano.",
+        "El antiguo monasterio benedictino de San Jorge, junto al río, es hoy un museo.",
+        "En verano se puede llegar en barco por el Rin desde Schaffhausen."
+      ],
+      "mejor_epoca": "De mayo a septiembre, para combinarlo con un paseo en barco.",
+      "como_llegar": "Tren regional desde Schaffhausen o Winterthur hasta Stein am Rhein; el casco antiguo está a 10 minutos a pie cruzando el puente."
+    },
+    "abadia-st-gallen": {
+      "nombre": "Abadía de St. Gallen",
+      "descripcion": "El recinto de la abadía de St. Gallen fue durante siglos uno de los grandes centros culturales de Europa. Su catedral barroca y, sobre todo, su biblioteca rococó, con manuscritos de más de mil años, son Patrimonio Mundial de la UNESCO desde 1983.",
+      "curiosidades": [
+        "Todo empezó con la ermita del monje irlandés Gallo, hacia el año 612.",
+        "En la sala de la biblioteca se entra con zapatillas de fieltro para proteger el suelo de madera.",
+        "Allí se conserva el «Plano de St. Gallen», el dibujo de un monasterio ideal de principios del siglo IX."
+      ],
+      "mejor_epoca": "Todo el año; la biblioteca cierra algunos días, así que conviene mirar el horario.",
+      "como_llegar": "Desde la estación de St. Gallen, unos 10 minutos a pie hacia el casco antiguo."
+    },
+    "appenzell": {
+      "nombre": "Appenzell",
+      "descripcion": "La pequeña capital del cantón de Appenzell Rodas Interiores es famosa por las fachadas de colores de su calle principal, la Hauptgasse. Rodeada de colinas verdes, conserva tradiciones muy vivas: queso, licor de hierbas y música popular.",
+      "curiosidades": [
+        "El último domingo de abril los ciudadanos votan a mano alzada en la plaza Landsgemeindeplatz, una de las últimas asambleas al aire libre de Suiza.",
+        "Las mujeres no pudieron votar en asuntos cantonales hasta 1990, tras una sentencia del Tribunal Federal.",
+        "El queso Appenzeller se cura con una salmuera de hierbas cuya receta es secreta."
+      ],
+      "mejor_epoca": "De mayo a octubre; a finales de abril, si quieres ver la Landsgemeinde.",
+      "como_llegar": "Tren de Appenzeller Bahnen desde St. Gallen o desde Gossau; el centro está a 5 minutos de la estación."
+    },
+    "rapperswil": {
+      "nombre": "Lago de Zúrich · Rapperswil",
+      "descripcion": "Rapperswil, la «ciudad de las rosas», asoma al lago de Zúrich con su castillo sobre la colina y su casco antiguo junto al agua. Desde el dique de Seedamm se ve el lago casi entero, con los Alpes al fondo.",
+      "curiosidades": [
+        "Más de 20 000 rosales florecen en sus jardines y espacios públicos.",
+        "Una pasarela de madera de unos 840 metros cruza el lago hasta Hurden y forma parte del Camino de Santiago hacia Einsiedeln.",
+        "El castillo alberga desde el siglo XIX un museo polaco."
+      ],
+      "mejor_epoca": "De junio a septiembre, con las rosas en flor.",
+      "como_llegar": "S-Bahn desde Zürich HB (unos 35 minutos) o barco por el lago en verano; el photo spot está en el Seedamm, junto a la orilla."
+    },
+    "salenstein": {
+      "nombre": "Lago de Constanza · Untersee",
+      "descripcion": "Desde el parque del castillo de Arenenberg, en Salenstein, la vista se abre sobre el Untersee, el brazo más tranquilo del lago de Constanza. El castillo fue la casa en el exilio de la reina Hortensia y del futuro Napoleón III, y hoy es el Museo Napoleón.",
+      "curiosidades": [
+        "La familia Bonaparte tuvo la finca entre 1817 y 1906.",
+        "Enfrente se ve la isla de Reichenau, en Alemania, Patrimonio Mundial por sus iglesias románicas.",
+        "El photo spot oficial está dentro del parque, a dos minutos a pie del museo."
+      ],
+      "mejor_epoca": "De mayo a octubre, cuando los jardines están en flor.",
+      "como_llegar": "Tren de la línea del lago (Schaffhausen–Kreuzlingen) hasta Mannenbach-Salenstein y subida a pie de unos 20 minutos."
+    },
+    "saentis": {
+      "nombre": "Säntis",
+      "descripcion": "Con 2502 metros, el Säntis es la cima más alta del macizo del Alpstein y una de las montañas más vistas del este de Suiza. Un teleférico sube en diez minutos desde Schwägalp hasta una terraza con vistas a seis países.",
+      "curiosidades": [
+        "Desde arriba se ven Suiza, Alemania, Austria, Liechtenstein, Francia e Italia.",
+        "Tiene una estación meteorológica en funcionamiento desde 1882.",
+        "Su gran antena de telecomunicaciones se reconoce desde muy lejos."
+      ],
+      "mejor_epoca": "De junio a octubre para las mejores vistas; en invierno el teleférico funciona, pero cuidado con el viento.",
+      "como_llegar": "Tren de Appenzeller Bahnen hasta Urnäsch y bus PostAuto hasta Schwägalp; desde allí, teleférico a la cima."
+    },
+    "sardona": {
+      "nombre": "Tectónica de Sardona",
+      "descripcion": "En las montañas entre Glaris, St. Gallen y los Grisones se ve a simple vista cómo se forman los Alpes: una línea nítida en la roca marca el cabalgamiento de Glaris, donde rocas de unos 250 millones de años quedaron encima de otras mucho más jóvenes. Es Patrimonio Mundial de la UNESCO desde 2008.",
+      "curiosidades": [
+        "El Martinsloch es un agujero de unos 17 por 19 metros en los Tschingelhörner.",
+        "Dos veces al año, en marzo y a finales de septiembre o principios de octubre, el sol brilla a través del Martinsloch sobre la iglesia de Elm.",
+        "Los geólogos del siglo XIX tardaron décadas en aceptar que las rocas viejas estuvieran encima de las jóvenes."
+      ],
+      "mejor_epoca": "De julio a septiembre, para caminar sin nieve.",
+      "como_llegar": "Tren hasta Schwanden (Glaris) y bus hasta Elm; desde allí parten las rutas. También se accede desde Flims."
+    },
+    "buendner-herrschaft": {
+      "nombre": "Bündner Herrschaft",
+      "descripcion": "Cuatro pueblos vinícolas —Fläsch, Maienfeld, Jenins y Malans— forman esta pequeña región del Rin alpino famosa por su pinot noir. Entre viñedos, casas señoriales y montañas, es también el paisaje en el que Johanna Spyri situó a Heidi.",
+      "curiosidades": [
+        "El viento cálido del sur, el foehn, ayuda a madurar la uva; aquí lo llaman «el cocedor de uvas».",
+        "Maienfeld tiene un «pueblo de Heidi» con la casa que recrea la del cuento.",
+        "Muchas bodegas familiares abren sus puertas para catas."
+      ],
+      "mejor_epoca": "De septiembre a octubre, en plena vendimia.",
+      "como_llegar": "Tren hasta Maienfeld o Landquart; los pueblos se recorren a pie o en bici entre viñedos."
+    },
+    "flueela": {
+      "nombre": "Puerto de Flüela",
+      "descripcion": "A 2383 metros, el Flüela une Davos con la Baja Engadina entre lagos, rocas y neveros. Es el primero de los cinco grandes puertos alpinos que cruza el Grand Tour.",
+      "curiosidades": [
+        "En lo alto hay dos lagos, el Schottensee y el Schwarzsee.",
+        "La carretera actual se abrió en 1867.",
+        "Cuando el puerto está cerrado por nieve, el tren lanzadera de coches de la Vereina une Klosters con Sagliains."
+      ],
+      "mejor_epoca": "De junio a octubre; en invierno suele estar cerrado.",
+      "como_llegar": "En verano, bus PostAuto Davos–Susch por el puerto, con parada en el hospicio.",
+      "aviso": "Este puerto procede de la lista de Routard; la web oficial de MySwitzerland lo confirma como uno de los cinco puertos del Grand Tour (Flüela, Julier, San Bernardino, San Gotardo y Furka). No tiene photo spot oficial: se enlaza la página oficial de puertos alpinos."
+    },
+    "guarda": {
+      "nombre": "Guarda",
+      "descripcion": "Uno de los pueblos más bonitos de la Engadina: casas de piedra con muros gruesos, ventanas pequeñas y decoraciones esgrafiadas, colgado sobre el valle del Inn. Su conjunto está protegido como patrimonio de importancia nacional.",
+      "curiosidades": [
+        "Aquí se ambienta «Una campana para Ursli» (Schellen-Ursli), el cuento de Selina Chönz ilustrado por Alois Carigiet.",
+        "Recibió el Premio Wakker en 1975.",
+        "El esgrafiado se hace rascando una capa de cal para dejar ver la de debajo."
+      ],
+      "mejor_epoca": "De junio a octubre.",
+      "como_llegar": "Tren de la Rética hasta Guarda y bus o 30 minutos a pie cuesta arriba hasta el pueblo."
+    },
+    "parque-nacional": {
+      "nombre": "Parque Nacional Suizo",
+      "descripcion": "Fundado en 1914, es el parque nacional más antiguo de los Alpes y el único de Suiza. Aquí la naturaleza se deja a su aire desde hace más de un siglo: no se tala, no se caza y solo se puede caminar por los senderos marcados.",
+      "curiosidades": [
+        "Es fácil ver ciervos, rebecos, íbices y marmotas; con suerte, también el quebrantahuesos.",
+        "Tiene unos 170 km² de superficie.",
+        "El centro de visitantes está en Zernez."
+      ],
+      "mejor_epoca": "De junio a octubre; en septiembre se oye la berrea de los ciervos.",
+      "como_llegar": "Tren de la Rética hasta Zernez y bus PostAuto por el puerto del Ofen hasta las paradas del parque, como Il Fuorn."
+    },
+    "muestair": {
+      "nombre": "Convento de Müstair",
+      "descripcion": "En el extremo oriental de Suiza, junto a la frontera italiana, el convento benedictino de San Juan fue fundado a finales del siglo VIII, según la tradición por Carlomagno. Sus frescos carolingios son un tesoro único y el conjunto es Patrimonio Mundial desde 1983.",
+      "curiosidades": [
+        "Conserva el ciclo de pinturas murales carolingias más completo que se conoce.",
+        "Sigue habitado por una comunidad de monjas benedictinas desde hace más de 1200 años.",
+        "La torre Planta, del siglo X, es una de las torres residenciales más antiguas de los Alpes."
+      ],
+      "mejor_epoca": "De mayo a octubre, aunque abre todo el año.",
+      "como_llegar": "Bus PostAuto desde Zernez por el puerto del Ofen hasta la parada «Müstair, Clostra Son Jon»."
+    },
+    "muottas-muragl": {
+      "nombre": "Muottas Muragl",
+      "descripcion": "Un balcón a 2456 metros sobre la Alta Engadina: desde aquí se ven los lagos de St. Moritz, Silvaplana y Sils en fila hacia Maloja. Un funicular centenario sube desde Punt Muragl.",
+      "curiosidades": [
+        "El funicular se inauguró en 1907.",
+        "El hotel de la cima produce más energía de la que consume.",
+        "El «Sendero de los filósofos» tiene paneles con citas para pensar mientras se camina."
+      ],
+      "mejor_epoca": "En verano para caminar y en invierno para bajar en trineo; al atardecer, todo el año.",
+      "como_llegar": "Tren de la Rética hasta Punt Muragl Staz y funicular hasta la cima."
+    },
+    "st-moritz": {
+      "nombre": "St. Moritz",
+      "descripcion": "La estación más famosa de la Engadina se mira en su lago, rodeada de montañas. Aquí nació el turismo de invierno moderno y aquí se celebraron dos Juegos Olímpicos de invierno, en 1928 y 1948.",
+      "curiosidades": [
+        "En 1864 el hotelero Johannes Badrutt retó a unos turistas ingleses a volver en invierno; si no les gustaba, les devolvía el dinero.",
+        "Sobre el lago helado se celebran en febrero las carreras de caballos White Turf.",
+        "El Cresta Run, una pista de hielo natural para bajar en trineo tumbado boca abajo, funciona desde finales del siglo XIX."
+      ],
+      "mejor_epoca": "Diciembre a marzo para el invierno; julio y agosto para el lago y las rutas.",
+      "como_llegar": "Tren de la Rética desde Chur por la línea del Albula, o Bernina Express desde Tirano."
+    },
+    "sils-maloja": {
+      "nombre": "Lago de Sils · Maloja",
+      "descripcion": "El lago de Sils es el mayor de la Alta Engadina y se extiende hasta el puerto de Maloja, donde la carretera cae en curvas hacia el valle de Bregaglia. Es un paisaje de luz limpia que inspiró a pintores y filósofos.",
+      "curiosidades": [
+        "Friedrich Nietzsche pasó varios veranos en Sils Maria.",
+        "El pintor Giovanni Segantini vivió y trabajó en Maloja.",
+        "Por la tarde sopla el viento de Maloja, muy apreciado por los windsurfistas."
+      ],
+      "mejor_epoca": "De junio a octubre; en invierno, cuando el lago se hiela, para caminar o esquiar de fondo.",
+      "como_llegar": "Bus PostAuto desde St. Moritz hasta Maloja (unos 30 minutos); el photo spot está en Maloja."
+    },
+    "julier": {
+      "nombre": "Puerto del Julier",
+      "descripcion": "A 2284 metros, el Julier une el valle de Surses con la Engadina. Ya lo usaban los romanos, y hoy es uno de los pocos puertos altos que se mantienen abiertos todo el año.",
+      "curiosidades": [
+        "En lo alto se conservan restos de dos columnas romanas.",
+        "La carretera se despeja de nieve también en invierno.",
+        "El bus PostAuto Chur–St. Moritz hace la ruta del Julier."
+      ],
+      "mejor_epoca": "De junio a septiembre para disfrutarlo; abierto todo el año.",
+      "como_llegar": "Bus PostAuto de la línea Chur–St. Moritz por el Julier; hay parada en el puerto.",
+      "aviso": "Este puerto procede de la lista de Routard; la web oficial de MySwitzerland lo confirma como uno de los cinco puertos del Grand Tour. No tiene photo spot oficial: se enlaza la ruta oficial del Julier."
+    },
+    "ferrocarril-retico": {
+      "nombre": "Ferrocarril Rético",
+      "descripcion": "Las líneas del Albula y del Bernina recorren 122 kilómetros entre Thusis y Tirano con viaductos, túneles en espiral y curvas imposibles. Son Patrimonio Mundial de la UNESCO desde 2008, y su imagen más famosa es el viaducto del Landwasser, que se mete directamente en un túnel en la roca.",
+      "curiosidades": [
+        "El viaducto del Landwasser mide 65 metros de alto y se terminó en 1902.",
+        "La línea del Bernina sube hasta 2253 metros sin cremallera.",
+        "En total suman 55 túneles y 196 puentes."
+      ],
+      "mejor_epoca": "Todo el año; en invierno los paisajes nevados son espectaculares.",
+      "como_llegar": "Tren hasta Filisur y unos 20-30 minutos a pie hasta el mirador del Landwasser."
+    },
+    "viamala": {
+      "nombre": "Garganta de Viamala",
+      "descripcion": "El Rin Posterior ha excavado aquí una garganta estrecha y profunda que durante siglos fue el paso más temido de la ruta hacia el sur. Una escalera de 321 peldaños baja hasta el fondo, entre paredes de roca a pocos metros unas de otras.",
+      "curiosidades": [
+        "Formaba parte de la vía hacia los puertos del Splügen y del San Bernardino.",
+        "Muy cerca, la iglesia de Zillis tiene un techo de madera pintado con 153 paneles del siglo XII.",
+        "Su nombre significa «mal camino»."
+      ],
+      "mejor_epoca": "De abril a noviembre, cuando está abierta la bajada.",
+      "como_llegar": "Bus PostAuto desde Thusis hasta la parada Viamala."
+    },
+    "san-bernardino": {
+      "nombre": "Puerto de San Bernardino",
+      "descripcion": "A 2065 metros, el San Bernardino une los Grisones de habla alemana con la Mesolcina italiana. En lo alto, el pequeño lago Moesola refleja las montañas.",
+      "curiosidades": [
+        "La carretera se construyó entre 1817 y 1823 y fue la primera de los Grisones apta para carruajes.",
+        "Desde 1967 un túnel de 6,6 km permite cruzarlo en invierno.",
+        "Hay un photo spot oficial junto al lago."
+      ],
+      "mejor_epoca": "De junio a octubre.",
+      "como_llegar": "El bus Chur–Bellinzona para en el pueblo de San Bernardino; desde allí se sube a pie (unas 2 horas) hasta el puerto.",
+      "aviso": "Este puerto procede de la lista de Routard; la web oficial de MySwitzerland lo confirma como uno de los cinco puertos del Grand Tour."
+    },
+    "bellinzona": {
+      "nombre": "Castillos de Bellinzona",
+      "descripcion": "Tres castillos —Castelgrande, Montebello y Sasso Corbaro— y una muralla que cerraba el valle convierten Bellinzona en la puerta fortificada de los Alpes. Se construyeron sobre todo en los siglos XIII a XV y son Patrimonio Mundial desde 2000.",
+      "curiosidades": [
+        "Los duques de Milán los reforzaron para controlar el paso hacia los puertos alpinos.",
+        "Un ascensor excavado en la roca sube a Castelgrande desde la Piazza del Sole.",
+        "La muralla, la Murata, cerraba de lado a lado el valle del Tesino."
+      ],
+      "mejor_epoca": "Todo el año; en primavera y otoño hace un tiempo ideal.",
+      "como_llegar": "Desde la estación de Bellinzona, 10 minutos a pie hasta Castelgrande."
+    },
+    "gotardo": {
+      "nombre": "Puerto de San Gotardo",
+      "descripcion": "El San Gotardo (2106 m) es el paso más simbólico de Suiza. Por el lado sur baja la Tremola, una carretera empedrada con decenas de curvas cerradas que es una joya de la ingeniería del siglo XIX.",
+      "curiosidades": [
+        "La Tremola tiene 24 curvas de herradura y es el monumento vial más largo de Suiza.",
+        "En el hospicio del puerto está el Museo Nacional del San Gotardo.",
+        "Bajo el puerto pasan hoy el túnel ferroviario de 1882, el túnel de carretera y el túnel de base de 57 km."
+      ],
+      "mejor_epoca": "De junio a octubre.",
+      "como_llegar": "En verano, bus PostAuto Airolo–Andermatt con parada en el puerto."
+    },
+    "furka": {
+      "nombre": "Puerto de la Furka",
+      "descripcion": "A 2429 metros, la Furka es el puerto más alto del Grand Tour. La carretera pasa junto al legendario hotel Belvédère y al glaciar del Ródano, donde nace el río que acaba en el Mediterráneo.",
+      "curiosidades": [
+        "Aquí se rodó una persecución de «James Bond contra Goldfinger» (1964).",
+        "Un tren de vapor histórico recorre la antigua línea de montaña de la Furka.",
+        "Cuando está cerrado, el tren lanzadera de coches une Realp y Oberwald."
+      ],
+      "mejor_epoca": "De junio a octubre; suele cerrar en invierno.",
+      "como_llegar": "En verano, bus PostAuto por la Furka entre Andermatt u Oberwald y el puerto.",
+      "aviso": "Este puerto procede de la lista de Routard; la web oficial de MySwitzerland lo confirma como uno de los cinco puertos del Grand Tour."
+    },
+    "aletsch": {
+      "nombre": "Aletsch Arena",
+      "descripcion": "Desde las crestas sobre Riederalp, Bettmeralp y Fiesch se domina el gran glaciar Aletsch, el más largo de los Alpes, con unos 20 kilómetros. Forma parte del Patrimonio Mundial «Alpes suizos Jungfrau-Aletsch».",
+      "curiosidades": [
+        "Los tres pueblos de la meseta, Riederalp, Bettmeralp y Fiescheralp, no tienen coches.",
+        "El glaciar retrocede año tras año: los paneles muestran hasta dónde llegaba hace un siglo.",
+        "En la Villa Cassel, en Riederfurka, hay un centro de Pro Natura dedicado al glaciar."
+      ],
+      "mejor_epoca": "De julio a septiembre para caminar junto al hielo.",
+      "como_llegar": "Tren hasta Betten Talstation, teleférico a Bettmeralp y telecabina al Bettmerhorn.",
+      "aviso": "Según la web oficial, el photo spot del glaciar Aletsch está retirado temporalmente por obras y está previsto que vuelva en el verano de 2027."
+    },
+    "matterhorn": {
+      "nombre": "Matterhorn",
+      "descripcion": "Con su pirámide casi perfecta de 4478 metros, el Matterhorn (o Cervino) es el símbolo de Suiza. Se alza sobre Zermatt, en la frontera con Italia, y cambia de color con la luz del día.",
+      "curiosidades": [
+        "Su primera ascensión fue el 14 de julio de 1865; cuatro de los siete alpinistas murieron en el descenso.",
+        "Zermatt es un pueblo sin coches de combustión.",
+        "Las mejores vistas son desde el Gornergrat, el lago Riffelsee o el Stellisee."
+      ],
+      "mejor_epoca": "Todo el año; las mañanas despejadas son las mejores para verlo entero.",
+      "como_llegar": "Tren Matterhorn Gotthard Bahn desde Visp hasta Zermatt (o lanzadera desde Täsch)."
+    },
+    "grimentz": {
+      "nombre": "Grimentz",
+      "descripcion": "En el Val d'Anniviers, Grimentz es un pueblo de casas de alerce oscurecidas por el sol y balcones llenos de geranios. Sus graneros sobre pilares de piedra recuerdan cómo se vivía en los valles altos del Valais.",
+      "curiosidades": [
+        "Guarda un «vino de los glaciares» que se cría durante décadas en barricas de alerce.",
+        "Los pequeños graneros, llamados mazots, se apoyan sobre discos de piedra para frenar a los ratones.",
+        "Es uno de los pueblos más fotografiados del Valais."
+      ],
+      "mejor_epoca": "De junio a septiembre con las flores; diciembre a abril para esquiar.",
+      "como_llegar": "Bus PostAuto desde Sierre (unos 45 minutos)."
+    },
+    "saint-maurice": {
+      "nombre": "Abadía de Saint-Maurice",
+      "descripcion": "Fundada en el año 515 al pie de un acantilado, la abadía de Saint-Maurice es el monasterio en actividad más antiguo de Occidente. Su tesoro guarda piezas de orfebrería de más de mil años.",
+      "curiosidades": [
+        "En 2015 celebró 1500 años de vida monástica ininterrumpida.",
+        "Su origen está en el culto a san Mauricio y la legión tebana.",
+        "Bajo la basílica se visitan restos arqueológicos de las iglesias anteriores."
+      ],
+      "mejor_epoca": "Todo el año.",
+      "como_llegar": "Tren hasta Saint-Maurice; la abadía está a 2 minutos de la estación."
+    },
+    "chillon": {
+      "nombre": "Castillo de Chillon",
+      "descripcion": "Sobre una roca en la orilla del lago Lemán, entre Montreux y Villeneuve, el castillo de Chillon parece flotar en el agua. Fue residencia de los condes de Saboya y es el monumento histórico más visitado de Suiza.",
+      "curiosidades": [
+        "Lord Byron escribió «El prisionero de Chillon» en 1816 y grabó su nombre en una columna de la mazmorra.",
+        "Tiene más de 25 edificios y patios.",
+        "Su origen se remonta al menos al siglo XI."
+      ],
+      "mejor_epoca": "Todo el año; en primavera y otoño, con menos gente.",
+      "como_llegar": "Tren a Veytaux-Chillon, bus 201 desde Montreux o Vevey, o barco CGN. Desde Montreux también se llega paseando por la orilla (unos 45 minutos)."
+    },
+    "lavaux": {
+      "nombre": "Viñedos de Lavaux",
+      "descripcion": "Unas 800 hectáreas de terrazas de viñedo bajan hacia el lago Lemán entre Lausana y Vevey. Las empezaron los monjes en la Edad Media y son Patrimonio Mundial de la UNESCO desde 2007.",
+      "curiosidades": [
+        "Se habla de «los tres soles»: el del cielo, su reflejo en el lago y el calor que guardan los muros de piedra.",
+        "La uva reina es la chasselas, que da vinos blancos ligeros.",
+        "Los muros de piedra de las terrazas se han reconstruido y cuidado durante siglos."
+      ],
+      "mejor_epoca": "De septiembre a octubre, con la vendimia y los colores del otoño.",
+      "como_llegar": "Tren regional Lausana–Vevey con paradas en Cully, Epesses o Rivaz, y paseo entre viñas."
+    },
+    "villa-le-lac": {
+      "nombre": "Villa Le Lac · Le Corbusier",
+      "descripcion": "En la orilla del Lemán, en Corseaux, Le Corbusier y Pierre Jeanneret construyeron en 1923-1924 una casita para los padres del arquitecto. Con solo 64 m² resume sus ideas y forma parte del Patrimonio Mundial de la obra de Le Corbusier.",
+      "curiosidades": [
+        "Su ventana horizontal de 11 metros enmarca el lago y los Alpes como un cuadro.",
+        "Es uno de los 17 lugares en siete países incluidos en la declaración de la UNESCO de 2016.",
+        "El tejado era una terraza con jardín."
+      ],
+      "mejor_epoca": "De primavera a otoño; abre solo algunos días, así que conviene mirar el horario.",
+      "como_llegar": "Tren hasta Vevey y unos 20 minutos a pie por la orilla hacia Corseaux."
+    },
+    "museo-olimpico": {
+      "nombre": "Museo Olímpico",
+      "descripcion": "En un parque frente al lago, en Ouchy, el Museo Olímpico cuenta la historia de los Juegos desde la Antigüedad hasta hoy. Lausana es la sede del Comité Olímpico Internacional desde 1915.",
+      "curiosidades": [
+        "Pierre de Coubertin trasladó aquí el COI durante la Primera Guerra Mundial.",
+        "Se abrió en 1993 y se renovó en 2013.",
+        "El parque que lo rodea está lleno de esculturas dedicadas al deporte."
+      ],
+      "mejor_epoca": "Todo el año.",
+      "como_llegar": "Metro M2 hasta Ouchy-Olympique y 5 minutos a pie."
+    },
+    "morges": {
+      "nombre": "Lago Lemán · Puerto de Morges",
+      "descripcion": "El viejo puerto de Morges, con su castillo del siglo XIII al lado, es uno de los rincones más fotogénicos de la orilla del Lemán. Al fondo, cuando está despejado, asoma el macizo del Mont Blanc.",
+      "curiosidades": [
+        "Cada primavera el parque de la Independencia se llena de tulipanes en su festival.",
+        "El castillo alberga varios museos militares.",
+        "Audrey Hepburn vivió en el cercano pueblo de Tolochenaz."
+      ],
+      "mejor_epoca": "De abril a septiembre; en abril, por los tulipanes.",
+      "como_llegar": "Tren a Morges (línea Lausana–Ginebra) y 5 minutos a pie hasta el puerto; también hay barcos CGN."
+    },
+    "vallorbe": {
+      "nombre": "Grutas de Vallorbe",
+      "descripcion": "El río Orbe desaparece bajo el Jura y vuelve a salir en las grutas de Vallorbe, un mundo subterráneo de estalactitas, salas y agua rugiente. Una de las salas guarda «el tesoro de las hadas», una colección de minerales de todo el mundo.",
+      "curiosidades": [
+        "Dentro hace fresco todo el año, así que conviene llevar una chaqueta.",
+        "El agua que sale aquí viene en parte del lago de Joux.",
+        "Muy cerca está el Juraparc, con bisontes, lobos y osos."
+      ],
+      "mejor_epoca": "De primavera a otoño (abren por temporada).",
+      "como_llegar": "Tren hasta Vallorbe y unos 40 minutos a pie, o en coche."
+    },
+    "creux-du-van": {
+      "nombre": "Creux du Van",
+      "descripcion": "Un anfiteatro de roca perfecto: paredes verticales de unos 160 metros forman un circo de más de un kilómetro de ancho en el Jura neuchâtelois. Desde el borde, a casi 1500 metros, se ven los lagos y, en días claros, los Alpes.",
+      "curiosidades": [
+        "Viven aquí íbices y rebecos, que a menudo se ven en el borde.",
+        "El circo es obra de la erosión y de un antiguo glaciar local.",
+        "El borde no tiene barandilla en muchos tramos: mejor no acercarse demasiado."
+      ],
+      "mejor_epoca": "De mayo a octubre.",
+      "como_llegar": "Tren hasta Noiraigue (Val-de-Travers) y subida a pie por el «sendero de las 14 curvas» (unas 2 horas)."
+    },
+    "palafitos-hauterive": {
+      "nombre": "Palafitos prehistóricos · Hauterive",
+      "descripcion": "Hace miles de años, en las orillas de los lagos alpinos, se construyeron poblados sobre pilotes. En Hauterive, el museo arqueológico Laténium y su parque reconstruyen estas casas junto al lago de Neuchâtel. Los palafitos alrededor de los Alpes son Patrimonio Mundial desde 2011.",
+      "curiosidades": [
+        "La declaración incluye 111 yacimientos en seis países, 56 de ellos en Suiza.",
+        "La cercana La Tène dio nombre a toda una cultura celta.",
+        "La madera de los pilotes permite fechar los poblados casi año a año."
+      ],
+      "mejor_epoca": "De abril a octubre, para disfrutar del parque.",
+      "como_llegar": "Bus desde Neuchâtel hasta la parada «Hauterive NE, Laténium»."
+    },
+    "erlach": {
+      "nombre": "Lago de Biel · Erlach",
+      "descripcion": "El pueblecito de Erlach, con su castillo y su calle empinada, mira al lago de Biel. Desde aquí parte el camino que lleva, por una lengua de tierra, hasta la isla de San Pedro.",
+      "curiosidades": [
+        "Jean-Jacques Rousseau vivió en la isla de San Pedro en 1765 y la describió como su lugar más feliz.",
+        "El camino de los Paganos (Heidenweg) une Erlach con la isla a pie.",
+        "Hay un photo spot oficial a orillas del lago."
+      ],
+      "mejor_epoca": "De mayo a septiembre.",
+      "como_llegar": "Tren hasta Ins y bus a Erlach, o barco por el lago de Biel en temporada."
+    },
+    "murten": {
+      "nombre": "Murten / Morat",
+      "descripcion": "Una ciudad medieval bilingüe rodeada de murallas que se pueden recorrer por el adarve. Desde arriba se ven los tejados rojos y el lago de Murten.",
+      "curiosidades": [
+        "En 1476 los confederados derrotaron aquí a Carlos el Temerario, duque de Borgoña.",
+        "Se habla alemán y francés: Murten en alemán, Morat en francés.",
+        "Sus soportales de piedra se llenan de terrazas en verano."
+      ],
+      "mejor_epoca": "De mayo a septiembre.",
+      "como_llegar": "Tren hasta Murten/Morat desde Berna, Friburgo o Neuchâtel."
+    },
+    "friburgo": {
+      "nombre": "Friburgo",
+      "descripcion": "Friburgo se asoma a un meandro del Sarine con un casco antiguo gótico entre el francés y el alemán. La torre de su catedral de San Nicolás domina la ciudad desde hace siglos.",
+      "curiosidades": [
+        "Tiene más de 200 fachadas góticas.",
+        "Su funicular, de 1899, funciona con contrapeso de aguas residuales.",
+        "La ciudad está sobre la «frontera» lingüística, el Röstigraben."
+      ],
+      "mejor_epoca": "Todo el año.",
+      "como_llegar": "Tren hasta Friburgo/Fribourg; la catedral está a unos 10 minutos a pie."
+    },
+    "gruyeres": {
+      "nombre": "Gruyères",
+      "descripcion": "Un pueblo medieval sobre una colina, con una calle única que sube hasta su castillo y vistas a los prados donde pastan las vacas del queso que lleva su nombre.",
+      "curiosidades": [
+        "El queso Gruyère AOP se elabora en la región; en Pringy hay una quesería abierta al público.",
+        "En el pueblo está el museo de H. R. Giger, creador de Alien.",
+        "La calle principal es peatonal."
+      ],
+      "mejor_epoca": "De mayo a octubre.",
+      "como_llegar": "Tren hasta Gruyères y subida a pie de unos 15 minutos (o bus)."
+    },
+    "gstaad": {
+      "nombre": "Gstaad",
+      "descripcion": "El pueblo de chalés del Saanenland mezcla tradición alpina y glamur internacional. Su calle peatonal está llena de casas de madera y alrededor se abren valles verdes y montañas.",
+      "curiosidades": [
+        "Muy cerca, en Glacier 3000, el Peak Walk es un puente colgante entre dos cumbres.",
+        "El Festival Menuhin de música clásica se celebra cada verano desde 1957.",
+        "La línea panorámica GoldenPass lo une con Montreux y el lago Lemán."
+      ],
+      "mejor_epoca": "Julio-agosto para caminar y el festival; diciembre a marzo para esquiar.",
+      "como_llegar": "Tren MOB/GoldenPass desde Montreux o Zweisimmen hasta Gstaad."
+    },
+    "spiez": {
+      "nombre": "Lago de Thun · Spiez",
+      "descripcion": "Una bahía con barcos, un castillo, una iglesia románica y viñedos que bajan hasta el agua: Spiez es la postal clásica del lago de Thun, con la pirámide del Niesen al fondo.",
+      "curiosidades": [
+        "La iglesia del castillo es del siglo XI.",
+        "Es uno de los pocos rincones del Oberland bernés con viñas.",
+        "Según la web oficial, el photo spot se ha trasladado temporalmente a la Oberlandstrasse."
+      ],
+      "mejor_epoca": "De mayo a octubre.",
+      "como_llegar": "Tren hasta Spiez (línea Berna–Interlaken) y unos 15 minutos a pie hasta la bahía."
+    },
+    "interlaken": {
+      "nombre": "Interlaken · Höhematte",
+      "descripcion": "En pleno centro de Interlaken, entre los lagos de Thun y Brienz, la gran pradera del Höhematte ofrece una vista despejada del Jungfrau. Es el lugar donde aterrizan los parapentes.",
+      "curiosidades": [
+        "En el siglo XIX un grupo de hoteleros y vecinos compró el prado para que nunca se edificara y no se tapara la vista.",
+        "Interlaken debe su nombre a su posición «entre lagos» (inter lacus).",
+        "Hay un photo spot oficial con el Jungfrau de fondo."
+      ],
+      "mejor_epoca": "Todo el año; en días despejados, para ver la montaña.",
+      "como_llegar": "Tren hasta Interlaken West u Ost y 5-10 minutos a pie."
+    },
+    "lago-brienz": {
+      "nombre": "Lago de Brienz",
+      "descripcion": "Su color turquesa intenso se debe a las partículas finas que arrastra el agua de los glaciares. Lo rodean montañas, cascadas y pueblos como Brienz e Iseltwald.",
+      "curiosidades": [
+        "El funicular del Giessbach, de 1879, sube a unas cascadas junto a un gran hotel histórico.",
+        "Brienz es la capital suiza de la talla en madera.",
+        "El tren de vapor del Brienzer Rothorn funciona desde 1892."
+      ],
+      "mejor_epoca": "De mayo a octubre, cuando navegan los barcos.",
+      "como_llegar": "Tren hasta Brienz (desde Interlaken Ost o Lucerna) y barco por el lago."
+    },
+    "jungfraujoch": {
+      "nombre": "Jungfraujoch",
+      "descripcion": "La estación de tren más alta de Europa (3454 m) se encuentra en un collado entre el Mönch y el Jungfrau. Arriba hay nieve todo el año, un palacio de hielo y vistas al nacimiento del glaciar Aletsch. Forma parte del Patrimonio Mundial «Alpes suizos Jungfrau-Aletsch».",
+      "curiosidades": [
+        "El tren del Jungfrau, inaugurado en 1912, sube por un túnel excavado dentro del Eiger y del Mönch.",
+        "El observatorio Sphinx está a 3571 metros.",
+        "A esta altitud el aire tiene bastante menos oxígeno: conviene ir con calma."
+      ],
+      "mejor_epoca": "Todo el año; los días despejados son imprescindibles.",
+      "como_llegar": "Tren desde Interlaken Ost hasta Kleine Scheidegg (o Eiger Express desde Grindelwald) y tren del Jungfrau hasta la cima."
+    },
+    "berna": {
+      "nombre": "Casco antiguo de Berna",
+      "descripcion": "Construida en una península del río Aare, la capital federal conserva un casco antiguo medieval con soportales, fuentes y torres. Es Patrimonio Mundial de la UNESCO desde 1983.",
+      "curiosidades": [
+        "Tiene unos 6 km de soportales, uno de los paseos cubiertos más largos de Europa.",
+        "El reloj de la torre Zytglogge funciona desde 1530 con figuras que se mueven a cada hora.",
+        "Einstein vivió aquí cuando formuló la relatividad especial; su casa se visita."
+      ],
+      "mejor_epoca": "Todo el año.",
+      "como_llegar": "Desde la estación de Berna, 10 minutos a pie hasta la Zytglogge."
+    },
+    "emmental": {
+      "nombre": "Quesería de Emmental",
+      "descripcion": "En Affoltern im Emmental, una quesería de demostración enseña cómo se hace el famoso queso de agujeros, tanto a la manera tradicional, en caldera sobre el fuego, como en la quesería moderna.",
+      "curiosidades": [
+        "Los agujeros se forman por el gas que producen unas bacterias durante la maduración.",
+        "Una rueda de Emmentaler AOP pesa entre 75 y 120 kilos.",
+        "Las colinas del Emmental están salpicadas de grandes granjas de madera."
+      ],
+      "mejor_epoca": "Todo el año.",
+      "como_llegar": "Tren hasta Burgdorf o Hasle-Rüegsau y bus regional hasta Affoltern im Emmental (consulta horarios en sbb.ch)."
+    },
+    "entlebuch": {
+      "nombre": "Biosfera de Entlebuch",
+      "descripcion": "Entre Berna y Lucerna, el Entlebuch es un paisaje de turberas, bosques y montañas cársticas donde la gente vive y trabaja en armonía con la naturaleza. La UNESCO lo reconoció como reserva de la biosfera en 2001.",
+      "curiosidades": [
+        "Tiene algunas de las turberas más extensas de Suiza.",
+        "La Schrattenfluh es un enorme lapiaz de roca caliza.",
+        "Es una reserva de la biosfera, no un lugar Patrimonio Mundial."
+      ],
+      "mejor_epoca": "De mayo a octubre.",
+      "como_llegar": "Tren Berna–Lucerna con paradas en Escholzmatt, Schüpfheim y Entlebuch; el centro de la biosfera está en Schüpfheim."
+    },
+    "hallwyl": {
+      "nombre": "Castillo de Hallwyl",
+      "descripcion": "Un castillo de cuento rodeado de agua, construido sobre dos islas del río Aabach junto al lago de Hallwil. Perteneció a la familia von Hallwyl desde la Edad Media hasta el siglo XX.",
+      "curiosidades": [
+        "Es uno de los castillos de foso más bonitos de Suiza.",
+        "Sus salas muestran la vida de sus habitantes a lo largo de los siglos.",
+        "Desde allí se puede pasear hasta la orilla del lago."
+      ],
+      "mejor_epoca": "De abril a octubre, cuando está abierto.",
+      "como_llegar": "S-Bahn del Seetal hasta Boniswil y unos 20 minutos a pie, o bus hasta «Seengen, Schloss Hallwyl»."
+    },
+    "kapellbruecke": {
+      "nombre": "Puente de la Capilla",
+      "descripcion": "El puente de madera cubierto más antiguo de Europa cruza el río Reuss en diagonal desde 1333, junto a la torre octogonal del Agua. Es la imagen de Lucerna.",
+      "curiosidades": [
+        "En 1993 un incendio destruyó gran parte del puente y de sus pinturas, que se reconstruyó en menos de un año.",
+        "Bajo el techo cuelgan pinturas triangulares del siglo XVII.",
+        "La torre del Agua fue archivo, tesoro y prisión."
+      ],
+      "mejor_epoca": "Todo el año; en verano el puente está adornado con flores.",
+      "como_llegar": "A 3 minutos a pie de la estación de Lucerna."
+    },
+    "pilatus": {
+      "nombre": "Pilatus",
+      "descripcion": "La montaña de Lucerna se alza junto al lago con su perfil dentado. Se sube en el tren de cremallera más empinado del mundo o en teleférico.",
+      "curiosidades": [
+        "El tren de cremallera, de 1889, llega a pendientes del 48 %.",
+        "Según la leyenda, en sus cumbres vivían dragones.",
+        "El «Golden Round Trip» combina barco, cremallera y teleférico."
+      ],
+      "mejor_epoca": "De mayo a noviembre para el cremallera; el teleférico funciona todo el año.",
+      "como_llegar": "Barco o tren hasta Alpnachstad y cremallera; o bus hasta Kriens y telecabina más teleférico."
+    },
+    "rigi": {
+      "nombre": "Rigi",
+      "descripcion": "La «reina de las montañas» se levanta entre los lagos de Lucerna y Zug. Desde Rigi Kulm (1798 m) se ven los Alpes en una línea interminable y una docena de lagos.",
+      "curiosidades": [
+        "Su cremallera de Vitznau, abierta en 1871, fue el primer ferrocarril de montaña de Europa.",
+        "Mark Twain subió a ver el amanecer y lo contó con mucho humor.",
+        "El photo spot oficial está en la estación de barcos de Vitznau, al pie de la montaña."
+      ],
+      "mejor_epoca": "Todo el año; de mayo a octubre para caminar.",
+      "como_llegar": "Barco desde Lucerna hasta Vitznau y cremallera; también desde Arth-Goldau o teleférico desde Weggis."
+    },
+    "brunnen": {
+      "nombre": "Lago de los Cuatro Cantones · Brunnen",
+      "descripcion": "Brunnen está en el codo del lago de los Cuatro Cantones, donde el lago gira hacia el sur y se encajona entre montañas. Su paseo junto al agua mira al corazón histórico de Suiza.",
+      "curiosidades": [
+        "Enfrente queda la pradera de Rütli, donde según la tradición se fundó la Confederación.",
+        "El Schillerstein es una roca en el lago dedicada a Friedrich Schiller, autor de «Guillermo Tell».",
+        "El Camino de Suiza (Weg der Schweiz) rodea el Urnersee."
+      ],
+      "mejor_epoca": "De mayo a octubre.",
+      "como_llegar": "Tren hasta Brunnen (línea del Gotardo) o barco por el lago; el photo spot está en el Bellevuequai."
+    },
+    "capilla-tell": {
+      "nombre": "Capilla de Tell",
+      "descripcion": "En la orilla rocosa del Urnersee, en Sisikon, una pequeña capilla marca el lugar donde, según la leyenda, Guillermo Tell saltó de la barca del bailío Gessler durante una tormenta.",
+      "curiosidades": [
+        "La capilla actual es de 1880 y está decorada con frescos de Ernst Stückelberg.",
+        "Ya había una capilla aquí en el siglo XVI.",
+        "Solo se llega a pie o en barco."
+      ],
+      "mejor_epoca": "De mayo a octubre, con los barcos en servicio.",
+      "como_llegar": "Barco hasta Tellsplatte (en temporada) o bus hasta Tellsplatte y bajada a pie de unos 10 minutos."
+    },
+    "einsiedeln": {
+      "nombre": "Einsiedeln",
+      "descripcion": "El monasterio benedictino de Einsiedeln, fundado en 934, es el gran santuario de peregrinación de Suiza. Su iglesia barroca, con la capilla de la Virgen Negra, deslumbra por dentro.",
+      "curiosidades": [
+        "Es una etapa del Camino de Santiago.",
+        "La iglesia actual se construyó entre 1719 y 1735 según los planos de Caspar Moosbrugger.",
+        "El monasterio cría caballos desde hace siglos."
+      ],
+      "mejor_epoca": "Todo el año.",
+      "como_llegar": "S-Bahn hasta Einsiedeln (cambio en Wädenswil o Biberbrugg) y 10 minutos a pie."
+    },
+    "basilea": {
+      "nombre": "Basilea",
+      "descripcion": "En el codo del Rin, donde se tocan Suiza, Francia y Alemania, Basilea combina un casco antiguo de piedra roja con algunos de los mejores museos de Europa. Su catedral domina el río desde la colina.",
+      "curiosidades": [
+        "Sus barcas de pasaje cruzan el Rin sin motor, empujadas solo por la corriente.",
+        "En verano la gente se baña en el Rin con bolsas impermeables en forma de pez.",
+        "Su carnaval empieza un lunes a las cuatro de la mañana con el Morgestraich."
+      ],
+      "mejor_epoca": "De mayo a septiembre para el Rin; febrero o marzo para el carnaval.",
+      "como_llegar": "Desde Basel SBB, tranvía hasta Barfüsserplatz y unos minutos a pie hasta la catedral."
+    },
+    "saint-ursanne": {
+      "nombre": "Saint-Ursanne",
+      "descripcion": "Un pueblo medieval amurallado en una curva del Doubs, en el Jura. Se entra por tres puertas antiguas y se cruza el río por un puente de piedra con la estatua de San Juan Nepomuceno.",
+      "curiosidades": [
+        "Debe su nombre al ermitaño Ursicino, que según la leyenda vivía con un oso.",
+        "Su colegiata románico-gótica tiene un claustro precioso.",
+        "En el Doubs se practica la pesca con mosca y el kayak."
+      ],
+      "mejor_epoca": "De mayo a octubre.",
+      "como_llegar": "Tren Delémont–Porrentruy hasta Saint-Ursanne y 15 minutos a pie cuesta abajo."
+    },
+    "chaux-de-fonds": {
+      "nombre": "La Chaux-de-Fonds / Le Locle",
+      "descripcion": "Dos ciudades del Jura planificadas para la relojería: calles en cuadrícula, edificios orientados al sol y grandes ventanas para que los relojeros trabajaran con luz. Son Patrimonio Mundial de la UNESCO desde 2009.",
+      "curiosidades": [
+        "La Chaux-de-Fonds se reconstruyó en cuadrícula tras un incendio en 1794.",
+        "Le Corbusier nació aquí en 1887.",
+        "El Museo Internacional de Relojería está en La Chaux-de-Fonds."
+      ],
+      "mejor_epoca": "Todo el año.",
+      "como_llegar": "Tren desde Neuchâtel o Biel/Bienne hasta La Chaux-de-Fonds; Le Locle está a una parada."
+    },
+    "jet-deau": {
+      "nombre": "Jet d'Eau · Ginebra",
+      "descripcion": "El chorro de agua del lago Lemán sube unos 140 metros y es el símbolo de Ginebra. Se ve desde casi toda la ciudad y, con sol, forma arcoíris.",
+      "curiosidades": [
+        "Nació en 1886 como válvula de seguridad de una red hidráulica.",
+        "El agua sale a unos 200 km/h, unos 500 litros por segundo.",
+        "Se puede caminar por el espigón hasta muy cerca del chorro (y mojarse)."
+      ],
+      "mejor_epoca": "Todo el año; está apagado con viento fuerte o heladas.",
+      "como_llegar": "Tranvía o bus hasta Rive y paseo por el muelle de Eaux-Vives."
+    },
+    "monte-san-giorgio": {
+      "nombre": "Monte San Giorgio",
+      "descripcion": "Esta montaña boscosa en forma de pirámide, sobre el lago de Lugano, guarda uno de los mejores registros de vida marina del Triásico: peces y reptiles de hace unos 240 millones de años. Es Patrimonio Mundial de la UNESCO desde 2003.",
+      "curiosidades": [
+        "Entre sus fósiles más famosos está el Ticinosuchus, un reptil terrestre.",
+        "El museo de fósiles de Meride fue renovado por el arquitecto Mario Botta.",
+        "La zona protegida se amplió al lado italiano en 2010."
+      ],
+      "mejor_epoca": "Primavera y otoño, para caminar sin calor.",
+      "como_llegar": "Tren hasta Mendrisio y bus hasta Meride; desde allí, sendero hasta la cima."
+    },
+    "monte-bre": {
+      "nombre": "Monte Brè",
+      "descripcion": "Monte Brè se considera la montaña más soleada de Suiza. Desde sus 925 metros se ve Lugano, el lago y, en días claros, los Alpes del Valais.",
+      "curiosidades": [
+        "El funicular sube desde Cassarate desde 1912.",
+        "El pueblo de Brè está decorado con obras de arte al aire libre.",
+        "Hay rutas a pie que bajan hasta el lago."
+      ],
+      "mejor_epoca": "Todo el año; de primavera a otoño para caminar.",
+      "como_llegar": "Bus desde el centro de Lugano hasta Cassarate y funicular hasta la cima."
+    },
+    "morcote": {
+      "nombre": "Morcote · Lago de Lugano",
+      "descripcion": "Casas con soportales a la orilla del lago, callejones que suben y una iglesia colgada en la ladera: Morcote es la postal italiana de Suiza.",
+      "curiosidades": [
+        "Fue elegido el pueblo más bonito de Suiza en 2016.",
+        "Unos 400 escalones suben a la iglesia de Santa Maria del Sasso.",
+        "El Parque Scherrer reúne jardines y arquitecturas de todo el mundo."
+      ],
+      "mejor_epoca": "De abril a octubre.",
+      "como_llegar": "Bus desde Lugano (unos 30 minutos) o barco por el lago."
+    },
+    "ascona": {
+      "nombre": "Ascona",
+      "descripcion": "Un pueblo de casas de colores alineado en la orilla del Lago Mayor, donde se respira un aire casi mediterráneo. Sobre él está el Monte Verità, cuna de la contracultura de principios del siglo XX.",
+      "curiosidades": [
+        "En el Monte Verità se reunieron artistas, vegetarianos y pensadores de toda Europa.",
+        "El Lago Mayor está en el punto más bajo de Suiza, a unos 193 metros.",
+        "Cada verano se celebra el festival JazzAscona."
+      ],
+      "mejor_epoca": "De abril a octubre.",
+      "como_llegar": "Tren hasta Locarno y bus hasta Ascona (unos 15 minutos)."
+    },
+    "lodano": {
+      "nombre": "Hayedos de Lodano",
+      "descripcion": "En un valle lateral del Valle Maggia, los hayedos de Lodano crecen sin intervención humana desde hace décadas. Forman parte del Patrimonio Mundial «Hayedos primarios y antiguos de los Cárpatos y otras regiones de Europa» desde 2021.",
+      "curiosidades": [
+        "Es una reserva forestal donde el bosque evoluciona libremente.",
+        "Las hayas suben aquí desde el fondo del valle hasta más de 1000 metros.",
+        "En otoño el bosque se vuelve dorado."
+      ],
+      "mejor_epoca": "Octubre, por los colores del otoño; también primavera.",
+      "como_llegar": "Bus del Valle Maggia desde Locarno hasta Lodano y sendero hacia el valle."
+    }
+  }
+}
