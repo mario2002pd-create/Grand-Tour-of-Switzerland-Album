@@ -330,3 +330,62 @@ body.con-ficha {
   filter: blur(3px);
   transform: scale(1.04);
 }
+
+/* Galería de tus fotos */
+.galeria {
+  list-style: none;
+  margin: 2px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  max-width: 360px;
+}
+.galeria:empty {
+  display: none;
+}
+.galeria__mini {
+  position: relative;
+  width: 58px;
+  height: 58px;
+  padding: 3px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-radius: 6px;
+  background: #fbfaf6;
+  cursor: pointer;
+}
+.galeria__mini img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+}
+.galeria__mini[aria-pressed='true'] {
+  border-color: var(--rojo);
+  box-shadow: 0 0 0 3px rgba(213, 43, 30, 0.45);
+}
+.galeria__portada {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--oro);
+  color: #1d2a30;
+  font-size: 0.8rem;
+}
+.ficha__acciones--fotos .boton {
+  min-height: 40px;
+  font-size: 0.92rem;
+}
+.ficha__nota-gh {
+  margin: 0;
+  max-width: 340px;
+  text-align: center;
+  font-size: 0.8rem;
+  opacity: 0.75;
+}

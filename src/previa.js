@@ -7,7 +7,7 @@ import { el, descargar, anunciar } from './util.js';
 
 const LADO_MAX = 1600;
 
-async function fechaExif(archivo) {
+export async function fechaExif(archivo) {
   try {
     const d = await exifr.parse(archivo);
     const f = d?.DateTimeOriginal || d?.CreateDate;

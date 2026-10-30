@@ -10,6 +10,7 @@ function cargarImagen(src) {
   return new Promise((ok, mal) => {
     const img = new Image();
     img.decoding = 'async';
+    img.crossOrigin = 'anonymous';
     img.onload = () => ok(img);
     img.onerror = () => mal(new Error('No se pudo cargar ' + src));
     img.src = src;
@@ -51,7 +52,7 @@ function cruz(ctx, x, y, s) {
   ctx.fillRect(x + (s - l) / 2, y + (s - b) / 2, l, b);
 }
 
-export async function generarImagenStories(c) {
+export async function generarImagenStories(c, srcFotoElegida) {
   await document.fonts?.ready;
   const lienzo = document.createElement('canvas');
   lienzo.width = W;
@@ -87,7 +88,7 @@ export async function generarImagenStories(c) {
   ctx.fillText(`${r.etiqueta} · ${r.nombre}`, 174, 226);
 
   // Cromo: foto con borde blanco, girado
-  const foto = await cargarImagen(fotoDe(c));
+  const foto = await cargarImagen(srcFotoElegida || fotoDe(c));
   const cw = 780;
   const ch = 1000;
   const cx = (W - cw) / 2;
@@ -151,11 +152,11 @@ export async function generarImagenStories(c) {
   return new Promise((ok) => lienzo.toBlob(ok, 'image/png'));
 }
 
-export async function compartirCromo(c) {
+export async function compartirCromo(c, srcFotoElegida) {
   anunciar(t('compartiendo'));
   let blob;
   try {
-    blob = await generarImagenStories(c);
+    blob = await generarImagenStories(c, srcFotoElegida);
   } catch (e) {
     anunciar('No se pudo generar la imagen.');
     console.error(e);
