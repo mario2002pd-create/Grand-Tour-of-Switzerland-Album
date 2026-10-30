@@ -23,7 +23,7 @@
   padding: 12px 14px;
   box-shadow: 4px 4px 0 var(--rojo);
 }
-.tarjeta-stat h3 {
+.stats .tarjeta-stat__titulo {
   font-family: var(--f-cartel);
   font-weight: 400;
   letter-spacing: 0.08em;
@@ -130,4 +130,10 @@
 .creditos li {
   break-inside: avoid;
   margin: 2px 0;
+}
+
+.alto__cifra small {
+  font-family: var(--f-texto);
+  font-size: 1.4rem;
+  font-weight: 600;
 }

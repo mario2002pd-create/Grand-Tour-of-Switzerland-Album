@@ -16,7 +16,10 @@ export function vistaMapa(main) {
         el(
           'a',
           { href: `#/cromo/${c.id}` },
-          el('span.mapa__punto', { 'aria-hidden': 'true', style: { background: pegado(c) ? region(c.region).color : '#9aa0a3' } }),
+          el('span.mapa__punto', {
+            'aria-hidden': 'true',
+            style: { background: pegado(c) ? region(c.region).color : '#9aa0a3' },
+          }),
           `${c.numero} · ${c.nombre}`,
           el('span.sr', {}, pegado(c) ? ` (${t('mapa_leyenda_tengo')})` : ` (${t('mapa_leyenda_falta')})`),
         ),
@@ -99,7 +102,10 @@ export function vistaMapa(main) {
       });
     }
   }
+  const ajustarPines = () => contMapa.classList.toggle('mapa--lejos', mapa.getZoom() < 8.5);
+  mapa.on('zoomend', ajustarPines);
   mapa.fitBounds(L.latLngBounds(estado.cromos.map((c) => [c.coordenadas.lat, c.coordenadas.lon])), { padding: [24, 24] });
+  ajustarPines();
   const ro = new ResizeObserver(() => mapa.invalidateSize());
   ro.observe(contMapa);
 

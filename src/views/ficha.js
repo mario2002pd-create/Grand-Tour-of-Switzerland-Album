@@ -30,6 +30,7 @@ export function cerrarFicha({ sinNavegar = false } = {}) {
   limpiar?.();
   nodo.remove();
   document.body.classList.remove('con-ficha');
+  for (const id of ['contenido', 'barra']) document.getElementById(id)?.removeAttribute('inert');
   actual = null;
   if (!sinNavegar) {
     // Si se llegó a la ficha navegando dentro del álbum, volvemos atrás; si se abrió con un enlace directo, al álbum.
@@ -47,7 +48,8 @@ export function abrirFicha(id) {
     return;
   }
   const volver = actual?.volver ?? (window.__navegaciones || 0) > 0;
-  const previoFoco = actual?.previoFoco ?? document.querySelector(`.cromo[data-id="${CSS.escape(id)}"]`) ?? document.activeElement;
+  const previoFoco =
+    actual?.previoFoco ?? document.querySelector(`.cromo[data-id="${CSS.escape(id)}"]`) ?? document.activeElement;
   if (actual) {
     actual.mapa?.remove();
     actual.limpiar?.();
@@ -56,6 +58,7 @@ export function abrirFicha(id) {
   const nodo = construir(c);
   document.body.append(nodo);
   document.body.classList.add('con-ficha');
+  for (const id of ['contenido', 'barra']) document.getElementById(id)?.setAttribute('inert', '');
   const mapa = miniMapa(nodo.querySelector('.ficha__mapa'), c);
   const quitarHolo = activarHolo(nodo);
   iniciarGiroscopioSiSePuede();
@@ -64,7 +67,10 @@ export function abrirFicha(id) {
     if (e.key === 'Escape') {
       e.preventDefault();
       cerrarFicha();
-    } else if ((e.key === 'ArrowRight' || e.key === 'ArrowLeft') && !e.target.closest('input, textarea, select, .leaflet-container')) {
+    } else if (
+      (e.key === 'ArrowRight' || e.key === 'ArrowLeft') &&
+      !e.target.closest('input, textarea, select, .leaflet-container')
+    ) {
       const i = estado.cromos.indexOf(c);
       const sig = estado.cromos[(i + (e.key === 'ArrowRight' ? 1 : -1) + estado.cromos.length) % estado.cromos.length];
       history.replaceState(null, '', `#/cromo/${sig.id}`);
@@ -109,7 +115,6 @@ function construir(c) {
     {
       type: 'button',
       'aria-pressed': 'false',
-      'aria-label': `${t('girar')}: ${tiene ? `tu foto de ${c.nombre}` : t('sin_visitar')}`,
       style: { '--giro': `${giro(c.id, 2.5)}deg` },
       onclick: () => {
         const girado = polaroid.classList.toggle('polaroid--girada');
@@ -120,6 +125,7 @@ function construir(c) {
     el(
       'span.polaroid__cara.polaroid__frente',
       {},
+      el('span.sr', {}, `${t('girar')}: `),
       el(
         'span.polaroid__foto',
         {},
@@ -154,7 +160,11 @@ function construir(c) {
     acciones.append(el('button.boton.boton--claro', { type: 'button', onclick: () => elegirFoto(c) }, t('probar_foto')));
     if (enPrevia(c)) {
       acciones.append(
-        el('button.boton.boton--claro', { type: 'button', onclick: () => descargarFotoPrevia(c) }, `${t('descargar')} (${c.id}.jpg)`),
+        el(
+          'button.boton.boton--claro',
+          { type: 'button', onclick: () => descargarFotoPrevia(c) },
+          `${t('descargar')} (${c.id}.jpg)`,
+        ),
         el('button.boton.boton--claro', { type: 'button', onclick: () => quitarPrevia(c) }, t('quitar_prueba')),
       );
     }
@@ -189,7 +199,16 @@ function construir(c) {
     etiquetas,
     el('section', {}, el('h3', {}, t('descripcion')), el('p', {}, c.descripcion)),
     c.aviso ? el('aside.ficha__aviso', { role: 'note' }, el('strong', {}, `${t('aviso')}: `), c.aviso) : null,
-    el('section', {}, el('h3', {}, t('curiosidades')), el('ul.curiosidades', {}, c.curiosidades.map((x) => el('li', {}, x)))),
+    el(
+      'section',
+      {},
+      el('h3', {}, t('curiosidades')),
+      el(
+        'ul.curiosidades',
+        {},
+        c.curiosidades.map((x) => el('li', {}, x)),
+      ),
+    ),
     el(
       'div.ficha__dos',
       {},
@@ -197,7 +216,20 @@ function construir(c) {
       el('section', {}, el('h3', {}, t('como_llegar')), el('p', {}, c.como_llegar)),
     ),
     el('section', {}, el('h3', {}, t('datos')), datos),
-    el('div.ficha__mapa', { role: 'img', 'aria-label': `Mapa: ${c.nombre}, ${c.coordenadas.lat.toFixed(3)}° N, ${c.coordenadas.lon.toFixed(3)}° E` }),
+    el('div.ficha__mapa', {
+      role: 'img',
+      'aria-label': `Mapa: ${c.nombre}, ${c.coordenadas.lat.toFixed(3)}° N, ${c.coordenadas.lon.toFixed(3)}° E`,
+    }),
+    el(
+      'p.ficha__credito',
+      {},
+      'Mapa © ',
+      el(
+        'a',
+        { href: 'https://www.openstreetmap.org/copyright', target: '_blank', rel: 'noopener' },
+        'colaboradores de OpenStreetMap',
+      ),
+    ),
     el(
       'p.ficha__enlace',
       {},
@@ -217,14 +249,28 @@ function construir(c) {
         ? [
             el('br'),
             'Foto de prueba: ',
-            el('a', { href: c.foto_credito.fuente, target: '_blank', rel: 'noopener' }, `${c.foto_credito.autor} · ${c.foto_credito.licencia}`),
+            el(
+              'a',
+              { href: c.foto_credito.fuente, target: '_blank', rel: 'noopener' },
+              `${c.foto_credito.autor} · ${c.foto_credito.licencia}`,
+            ),
           ]
         : null,
     ),
     el('p.no-oficial', {}, t('aviso_no_oficial')),
   );
 
-  const fondo = el('div.ficha__fondo', { 'aria-hidden': 'true' }, el('img', { src: url(c.imagen.fondo), alt: '', onerror: (e) => e.currentTarget.remove() }));
+  const fondo = el(
+    'div.ficha__fondo',
+    { 'aria-hidden': 'true' },
+    el('img', {
+      src: url(c.imagen.fondo),
+      alt: '',
+      onerror: (e) => e.currentTarget.remove(),
+      // Algunos originales libres son pequeños: un leve desenfoque evita que se vean pixelados
+      onload: (e) => e.currentTarget.naturalWidth < 1000 && e.currentTarget.classList.add('fondo--baja'),
+    }),
+  );
 
   return el(
     'div.ficha',
@@ -233,21 +279,39 @@ function construir(c) {
     el(
       'div.ficha__barra',
       {},
-      el('a.boton.boton--claro.boton--icono', { href: `#/cromo/${ant.id}`, 'aria-label': `Anterior: ${ant.numero} ${ant.nombre}`, onclick: irA(ant) }, '‹'),
-      el('a.boton.boton--claro.boton--icono', { href: `#/cromo/${sig.id}`, 'aria-label': `Siguiente: ${sig.numero} ${sig.nombre}`, onclick: irA(sig) }, '›'),
-      el('button.boton.boton--claro.boton--icono', { type: 'button', 'aria-label': t('cerrar'), onclick: () => cerrarFicha() }, '✕'),
+      el(
+        'a.boton.boton--claro.boton--icono',
+        { href: `#/cromo/${ant.id}`, 'aria-label': `Anterior: ${ant.numero} ${ant.nombre}`, onclick: irA(ant) },
+        '‹',
+      ),
+      el(
+        'a.boton.boton--claro.boton--icono',
+        { href: `#/cromo/${sig.id}`, 'aria-label': `Siguiente: ${sig.numero} ${sig.nombre}`, onclick: irA(sig) },
+        '›',
+      ),
+      el(
+        'button.boton.boton--claro.boton--icono',
+        { type: 'button', 'aria-label': t('cerrar'), onclick: () => cerrarFicha() },
+        '✕',
+      ),
     ),
     el(
       'div.ficha__contenido',
       {},
       el(
-        'header.ficha__cabecera',
+        'div.ficha__cabecera',
         {},
         el('span.ficha__num', { 'aria-hidden': 'true' }, c.numero),
         el('h2.ficha__titulo#ficha-titulo', { tabindex: '-1' }, el('span.sr', {}, `Cromo ${c.numero}: `), c.nombre),
         c.nombre_local && c.nombre_local !== c.nombre ? el('p.ficha__local', {}, c.nombre_local) : null,
       ),
-      el('div.ficha__polaroid', {}, polaroid, el('p.ficha__pista', { 'aria-hidden': 'true' }, 'Toca la foto para darle la vuelta'), acciones),
+      el(
+        'div.ficha__polaroid',
+        {},
+        polaroid,
+        el('p.ficha__pista', { 'aria-hidden': 'true' }, 'Toca la foto para darle la vuelta'),
+        acciones,
+      ),
       info,
     ),
   );
@@ -265,15 +329,12 @@ function miniMapa(nodo, c) {
       center: [c.coordenadas.lat, c.coordenadas.lon],
       zoom: 10,
       zoomControl: false,
-      attributionControl: true,
+      attributionControl: false, // el crédito va debajo, fuera del mapa
       scrollWheelZoom: false,
       dragging: !L.Browser.mobile,
       keyboard: false,
     });
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 18,
-      attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-    }).addTo(m);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18 }).addTo(m);
     L.circleMarker([c.coordenadas.lat, c.coordenadas.lon], {
       radius: 9,
       color: '#fff',

@@ -9,7 +9,7 @@ const LADO_MAX = 1600;
 
 async function fechaExif(archivo) {
   try {
-    const d = await exifr.parse(archivo, ['DateTimeOriginal', 'CreateDate']);
+    const d = await exifr.parse(archivo);
     const f = d?.DateTimeOriginal || d?.CreateDate;
     if (f instanceof Date && !Number.isNaN(f.getTime())) {
       return `${f.getFullYear()}-${String(f.getMonth() + 1).padStart(2, '0')}-${String(f.getDate()).padStart(2, '0')}`;
@@ -179,7 +179,15 @@ export function dialogoExportar() {
       ' del repositorio y sustituye ',
       el('code', {}, 'data/cromos.json'),
       ' por el archivo exportado. Más detalles en el ',
-      el('a', { href: 'https://github.com/mario2002pd-create/Grand-Tour-of-Switzerland-Album#readme', target: '_blank', rel: 'noopener' }, 'README'),
+      el(
+        'a',
+        {
+          href: 'https://github.com/mario2002pd-create/Grand-Tour-of-Switzerland-Album#readme',
+          target: '_blank',
+          rel: 'noopener',
+        },
+        'README',
+      ),
       '.',
     ),
     el(

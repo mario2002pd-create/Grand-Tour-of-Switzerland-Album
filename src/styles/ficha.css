@@ -17,8 +17,7 @@ body.con-ficha {
   inset: 0;
   z-index: 0;
   background:
-    radial-gradient(ellipse at 30% 20%, rgba(111, 159, 180, 0.35), transparent 60%),
-    linear-gradient(160deg, #24343b, #10181c);
+    radial-gradient(ellipse at 30% 20%, rgba(111, 159, 180, 0.35), transparent 60%), linear-gradient(160deg, #24343b, #10181c);
 }
 .ficha__fondo img {
   width: 100%;
@@ -152,9 +151,7 @@ body.con-ficha {
   padding: 26px 22px;
   text-align: left;
   transform: perspective(900px) rotateY(180deg);
-  background:
-    repeating-linear-gradient(0deg, transparent 0 29px, rgba(111, 159, 180, 0.35) 29px 30px),
-    #fbf6e9;
+  background: repeating-linear-gradient(0deg, transparent 0 29px, rgba(111, 159, 180, 0.35) 29px 30px), #fbf6e9;
 }
 .polaroid--girada .polaroid__frente {
   transform: perspective(900px) rotateY(-180deg);
@@ -326,4 +323,9 @@ body.con-ficha {
 }
 .ficha .no-oficial {
   color: rgba(251, 248, 241, 0.75);
+}
+
+.ficha__fondo img.fondo--baja {
+  filter: blur(3px);
+  transform: scale(1.04);
 }

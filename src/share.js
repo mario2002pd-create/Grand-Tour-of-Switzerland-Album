@@ -105,9 +105,13 @@ export async function generarImagenStories(c) {
   cubrir(ctx, foto, -cw / 2 + m, -ch / 2 + m, cw - 2 * m, ch - 2 * m - 120);
   if (c.rareza === 'brillante') {
     const holo = ctx.createLinearGradient(-cw / 2, -ch / 2, cw / 2, ch / 2);
-    ['rgba(255,0,132,.18)', 'rgba(255,203,87,.18)', 'rgba(110,255,160,.18)', 'rgba(64,160,255,.18)', 'rgba(200,90,255,.18)'].forEach((col, i, a) =>
-      holo.addColorStop(i / (a.length - 1), col),
-    );
+    [
+      'rgba(255,0,132,.18)',
+      'rgba(255,203,87,.18)',
+      'rgba(110,255,160,.18)',
+      'rgba(64,160,255,.18)',
+      'rgba(200,90,255,.18)',
+    ].forEach((col, i, a) => holo.addColorStop(i / (a.length - 1), col));
     ctx.globalCompositeOperation = 'overlay';
     ctx.fillStyle = holo;
     ctx.fillRect(-cw / 2 + m, -ch / 2 + m, cw - 2 * m, ch - 2 * m - 120);

@@ -48,7 +48,7 @@ function alGirar(e) {
 export const giroscopioNecesitaPermiso = () =>
   typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function';
 
-const esTactil = () => window.matchMedia('(pointer: coarse)').matches;
+export const esTactil = () => window.matchMedia('(pointer: coarse)').matches;
 
 /** En Android y similares se activa solo; en iOS, tras pulsar un botón. */
 export function iniciarGiroscopioSiSePuede() {

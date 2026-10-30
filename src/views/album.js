@@ -2,7 +2,14 @@
 import { estado, t, pegado, nombreCategoria, setModoPrevia, vistos, marcarVisto } from '../data.js';
 import { el, fmt, anunciar, reduceMotion } from '../util.js';
 import { crearCromo } from '../cromo.js';
-import { activarHolo, iniciarGiroscopioSiSePuede, giroscopioNecesitaPermiso, pedirPermisoGiroscopio, giroscopioActivo } from '../holo.js';
+import {
+  activarHolo,
+  iniciarGiroscopioSiSePuede,
+  giroscopioNecesitaPermiso,
+  pedirPermisoGiroscopio,
+  giroscopioActivo,
+  esTactil,
+} from '../holo.js';
 import { dialogoExportar } from '../previa.js';
 
 const normalizar = (s) =>
@@ -29,7 +36,11 @@ export function vistaAlbum(main, args) {
     {},
     regiones.map((r, i) => el('option', { value: String(i) }, `${r.etiqueta} · ${r.nombre}`)),
   );
-  const btnPrevia = el('button.boton.boton--mini.interruptor', { type: 'button', 'aria-pressed': String(estado.modoPrevia) }, t('modo_vista_previa'));
+  const btnPrevia = el(
+    'button.boton.boton--mini.interruptor',
+    { type: 'button', 'aria-pressed': String(estado.modoPrevia) },
+    t('modo_vista_previa'),
+  );
   const btnExportar = el('button.boton.boton--mini', { type: 'button', onclick: dialogoExportar }, t('exportar'));
   const btnGiro = el('button.boton.boton--mini', { type: 'button', hidden: true }, t('activar_giroscopio'));
   const ayudaPrevia = el('p.album__ayuda-previa', { hidden: !estado.modoPrevia }, t('vista_previa_ayuda'));
@@ -47,7 +58,7 @@ export function vistaAlbum(main, args) {
   const pista = el('div.album__pista');
   const visor = el(
     'div.album__visor',
-    { role: 'region', 'aria-roledescription': 'carrusel', 'aria-label': t('nav_album') },
+    { role: 'region', 'aria-roledescription': 'carrusel', 'aria-label': 'Páginas del álbum' },
     pista,
   );
   const btnAnt = el('button.boton.boton--icono.album__flecha', { type: 'button', 'aria-label': t('anterior') }, '‹');
@@ -57,7 +68,16 @@ export function vistaAlbum(main, args) {
   const navegacion = el('div.album__nav', {}, btnAnt, el('div.album__centro', {}, puntos, indicador), btnSig);
   const resultados = el('section.album__resultados', { hidden: true, 'aria-label': 'Resultados de búsqueda' });
 
-  const raiz = el('section.album', { 'aria-labelledby': 'album-titulo' }, el('h1.sr#album-titulo', {}, t('nav_album')), herramientas, ayudaPrevia, resultados, visor, navegacion);
+  const raiz = el(
+    'section.album',
+    { 'aria-labelledby': 'album-titulo' },
+    el('h1.sr#album-titulo', {}, t('nav_album')),
+    herramientas,
+    ayudaPrevia,
+    resultados,
+    visor,
+    navegacion,
+  );
   main.append(raiz);
 
   function renderPaginas() {
@@ -166,7 +186,11 @@ export function vistaAlbum(main, args) {
         (!q || normalizar(`${c.nombre} ${c.nombre_local} ${c.numero} ${c.descripcion} ${c.canton.join(' ')}`).includes(q)),
     );
     resultados.replaceChildren(
-      el('p.resultados__cuenta', { role: 'status' }, lista.length ? fmt(t('resultados'), { n: lista.length }) : t('sin_resultados')),
+      el(
+        'p.resultados__cuenta',
+        { role: 'status' },
+        lista.length ? fmt(t('resultados'), { n: lista.length }) : t('sin_resultados'),
+      ),
       el(
         'ul.rejilla',
         { role: 'list' },
@@ -203,7 +227,7 @@ export function vistaAlbum(main, args) {
   // ——— Giroscopio (iOS pide permiso con un toque) ———
   iniciarGiroscopioSiSePuede();
   const hayBrillantesPegados = estado.cromos.some((c) => c.rareza === 'brillante' && pegado(c));
-  if (giroscopioNecesitaPermiso() && !giroscopioActivo() && hayBrillantesPegados) {
+  if (esTactil() && giroscopioNecesitaPermiso() && !giroscopioActivo() && hayBrillantesPegados) {
     btnGiro.hidden = false;
     btnGiro.addEventListener('click', async () => {
       if (await pedirPermisoGiroscopio()) btnGiro.hidden = true;

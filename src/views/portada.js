@@ -27,7 +27,6 @@ export function vistaPortada(main) {
     'button.tapa',
     {
       type: 'button',
-      'aria-label': `${t('abrir_album')}. ${fmt(t('contador'), { x, n })}`,
       onclick: abrir,
     },
     el('span.tapa__lomo', { 'aria-hidden': 'true' }),
@@ -43,21 +42,33 @@ export function vistaPortada(main) {
       el('span.tapa__contador', {}, fmt(t('contador'), { x, n }).replace(/^\d+ \/ \d+ /, '')),
       el(
         'span.progreso',
-        { role: 'progressbar', 'aria-valuemin': '0', 'aria-valuemax': String(n), 'aria-valuenow': String(x), 'aria-label': fmt(t('contador'), { x, n }) },
+        {
+          role: 'progressbar',
+          'aria-valuemin': '0',
+          'aria-valuemax': String(n),
+          'aria-valuenow': String(x),
+          'aria-label': fmt(t('contador'), { x, n }),
+        },
         el('span.progreso__barra', { style: { width: `${pct}%` } }),
       ),
-      el('span.tapa__accion', {}, t('toca_para_abrir')),
+      el('span.tapa__accion', {}, t('toca_para_abrir'), el('span.sr', {}, `. ${t('abrir_album')}`)),
     ),
   );
 
+  let abierta = false;
   function abrir() {
+    if (abierta) return;
+    abierta = true;
     if (reduceMotion()) {
       location.hash = '#/album';
       return;
     }
     tapa.classList.add('tapa--abriendo');
-    tapa.addEventListener('animationend', () => (location.hash = '#/album'), { once: true });
-    setTimeout(() => (location.hash = '#/album'), 1100);
+    const ir = () => {
+      if (location.hash !== '#/album' && !location.hash.startsWith('#/album/')) location.hash = '#/album';
+    };
+    tapa.addEventListener('animationend', ir, { once: true });
+    setTimeout(ir, 1100);
   }
 
   main.append(
@@ -69,6 +80,5 @@ export function vistaPortada(main) {
       el('p.no-oficial.portada__aviso', {}, t('aviso_no_oficial')),
     ),
   );
-  requestAnimationFrame(() => tapa.focus({ preventScroll: true }));
   return {};
 }

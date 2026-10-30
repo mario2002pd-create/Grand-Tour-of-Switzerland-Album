@@ -8,12 +8,12 @@ function barra(etiqueta, x, n, color) {
     'li.barra-stat',
     {},
     el('span.barra-stat__etiqueta', {}, etiqueta),
+    el('span.barra-stat__cifra', { 'aria-hidden': 'true' }, `${x}/${n}`),
     el(
       'span.barra-stat__pista',
       { role: 'img', 'aria-label': `${etiqueta}: ${x} de ${n} (${pct} %)` },
       el('span.barra-stat__relleno', { style: { width: `${pct}%`, background: color } }),
     ),
-    el('span.barra-stat__cifra', { 'aria-hidden': 'true' }, `${x}/${n}`),
   );
 }
 
@@ -21,7 +21,7 @@ function tarjeta(titulo, x, n, nota) {
   return el(
     'div.tarjeta-stat',
     {},
-    el('h3', {}, titulo),
+    el('h2.tarjeta-stat__titulo', {}, titulo),
     el('p.tarjeta-stat__cifra', {}, el('strong', {}, String(x)), el('span', {}, ` / ${n}`)),
     nota ? el('p.tarjeta-stat__nota', {}, nota) : null,
   );
@@ -68,10 +68,17 @@ export function vistaStats(main) {
           ? el(
               'a.alto',
               { href: `#/cromo/${masAlto.id}` },
-              el('span.alto__cifra', {}, `${formatoNumero(masAlto.altitud)} m`),
+              el('span.alto__cifra', {}, formatoNumero(masAlto.altitud), el('small', {}, ' m')),
               el('span.alto__nombre', {}, `${masAlto.numero} · ${masAlto.nombre}`),
             )
           : el('p', {}, t('stats_ninguno')),
+        masAlto
+          ? el(
+              'p.no-oficial',
+              {},
+              'Según la altitud de las coordenadas del cromo (en cumbres y puertos, la de la cima o el collado).',
+            )
+          : null,
       ),
       el(
         'div.stats__columnas',
@@ -83,7 +90,9 @@ export function vistaStats(main) {
           el(
             'ul.barras',
             {},
-            estado.regiones.map((r) => barra(`${r.etiqueta} · ${r.nombre}`, r.cromos.filter(pegado).length, r.cromos.length, r.color)),
+            estado.regiones.map((r) =>
+              barra(`${r.etiqueta} · ${r.nombre}`, r.cromos.filter(pegado).length, r.cromos.length, r.color),
+            ),
           ),
         ),
         el(

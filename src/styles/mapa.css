@@ -130,3 +130,12 @@
   border-radius: 50%;
   flex: none;
 }
+
+/* Vista lejana: pines pequeños sin número para que no se amontonen */
+.mapa--lejos .pin span {
+  width: 14px;
+  height: 14px;
+  margin: 8px;
+  border-width: 2px;
+  font-size: 0;
+}

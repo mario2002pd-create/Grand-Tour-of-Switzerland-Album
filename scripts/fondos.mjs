@@ -141,8 +141,14 @@ async function main() {
     try {
       const buf = await original(c.id, c.imagen.fuente);
       const img = sharp(buf).rotate();
-      await writeFile(dFondo, await img.clone().resize({ width: ANCHO, withoutEnlargement: true }).webp({ quality: 78 }).toBuffer());
-      await writeFile(dMini, await img.clone().resize({ width: ANCHO_MINI, withoutEnlargement: true }).webp({ quality: 72 }).toBuffer());
+      await writeFile(
+        dFondo,
+        await img.clone().resize({ width: ANCHO, withoutEnlargement: true }).webp({ quality: 78 }).toBuffer(),
+      );
+      await writeFile(
+        dMini,
+        await img.clone().resize({ width: ANCHO_MINI, withoutEnlargement: true }).webp({ quality: 72 }).toBuffer(),
+      );
       await writeFile(dSil, await silueta(buf));
       const meta = await sharp(buf).metadata();
       hechos++;

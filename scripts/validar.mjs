@@ -19,7 +19,19 @@ const album = await leer('data/album.json');
 const regiones = new Set(album.regiones.map((r) => r.id));
 const categorias = new Set(album.categorias);
 
-const CAMPOS = ['id', 'numero', 'nombre', 'canton', 'region', 'categoria', 'coordenadas', 'altitud', 'rareza', 'enlace_oficial', 'imagen'];
+const CAMPOS = [
+  'id',
+  'numero',
+  'nombre',
+  'canton',
+  'region',
+  'categoria',
+  'coordenadas',
+  'altitud',
+  'rareza',
+  'enlace_oficial',
+  'imagen',
+];
 const CAMPOS_USUARIO = ['foto_mia', 'fecha_visita', 'nota_personal', 'visitado'];
 const ids = new Set();
 const numeros = new Set();
@@ -38,7 +50,9 @@ for (const c of cromos) {
   if (!(lat > 45.8 && lat < 47.9 && lon > 5.9 && lon < 10.6)) errores.push(`${q}: coordenadas fuera de Suiza`);
   if (!(c.altitud > 150 && c.altitud < 4700)) errores.push(`${q}: altitud sospechosa (${c.altitud})`);
   for (const k of ['autor', 'licencia', 'licencia_url', 'fuente']) if (!c.imagen?.[k]) errores.push(`${q}: falta imagen.${k}`);
-  for (const k of ['fondo', 'miniatura', 'silueta']) if (c.imagen?.[k] && !(await existe(c.imagen[k]))) avisos.push(`${q}: aún no existe ${c.imagen[k]} (ejecuta «npm run fondos»)`);
+  for (const k of ['fondo', 'miniatura', 'silueta'])
+    if (c.imagen?.[k] && !(await existe(c.imagen[k])))
+      avisos.push(`${q}: aún no existe ${c.imagen[k]} (ejecuta «npm run fondos»)`);
   if (c.visitado && !c.foto_mia) errores.push(`${q}: visitado=true pero sin foto_mia`);
   if (c.foto_mia && !(await existe(c.foto_mia))) errores.push(`${q}: no existe la foto ${c.foto_mia}`);
   if (c.fecha_visita && !/^\d{4}-\d{2}-\d{2}$/.test(c.fecha_visita)) errores.push(`${q}: fecha_visita debe ser AAAA-MM-DD`);
