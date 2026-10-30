@@ -51,6 +51,7 @@ async function mostrar(seccion, args) {
   }
   vistaActual?.destruir?.();
   main.replaceChildren();
+  window.scrollTo(0, 0);
   claveVista = clave;
   document.body.dataset.vista = clave || 'portada';
   barra.hidden = clave === '';

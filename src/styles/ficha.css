@@ -47,6 +47,7 @@ body.con-ficha {
   justify-content: flex-end;
   gap: 8px;
   padding: max(10px, env(safe-area-inset-top)) max(14px, env(safe-area-inset-right)) 10px 14px;
+  background: linear-gradient(rgba(10, 16, 20, 0.85), rgba(10, 16, 20, 0.6) 60%, transparent);
 }
 .ficha__barra .boton--icono {
   font-size: 1.4rem;

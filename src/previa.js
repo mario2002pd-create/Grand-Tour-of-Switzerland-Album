@@ -44,7 +44,11 @@ export function montarDialogo(caja, { alCerrar } = {}) {
   const previoFoco = document.activeElement;
   const fondo = el('div.dialogo', { role: 'presentation' }, caja);
   raiz.replaceChildren(fondo);
+  let cerrado = false;
   const cerrar = () => {
+    if (cerrado) return;
+    cerrado = true;
+    window.removeEventListener('hashchange', cerrar);
     cerrarDialogo(raiz, previoFoco);
     alCerrar?.();
   };
@@ -68,6 +72,8 @@ export function montarDialogo(caja, { alCerrar } = {}) {
     }
   };
   document.addEventListener('keydown', raiz._tecla);
+  // Si se navega (por ejemplo con el botón Atrás), el diálogo se cierra
+  window.addEventListener('hashchange', cerrar, { once: true });
   fondo.addEventListener('click', (e) => e.target === fondo && cerrar());
   requestAnimationFrame(() => (caja.querySelector('[autofocus]') || caja.querySelector('button, input'))?.focus());
   return cerrar;
