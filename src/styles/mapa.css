@@ -1,0 +1,132 @@
+/* ——— Mapa ——— */
+.mapa {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px max(16px, env(safe-area-inset-left)) 28px;
+}
+.mapa__cabecera {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px 20px;
+}
+.mapa__cabecera h1 {
+  font-size: clamp(1.6rem, 5vw, 2.3rem);
+}
+.mapa__leyenda {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 0.9rem;
+}
+.mapa__leyenda li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.ley {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px var(--tinta-2);
+}
+.ley--tengo {
+  background: var(--rojo);
+}
+.ley--falta {
+  background: #9aa0a3;
+}
+.ley--ruta,
+.ley--acceso {
+  width: 26px;
+  height: 4px;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: none;
+  background: var(--rojo);
+}
+.ley--acceso {
+  background: repeating-linear-gradient(90deg, var(--rojo) 0 6px, transparent 6px 10px);
+}
+.mapa__lienzo {
+  height: min(72dvh, 720px);
+  min-height: 380px;
+  border-radius: 10px;
+  border: 3px solid var(--tinta);
+  box-shadow: var(--sombra);
+  background: #d7e2dc;
+  /* Tonos de mapa antiguo sobre las teselas de OSM */
+}
+.mapa__lienzo .leaflet-tile-pane {
+  filter: sepia(0.35) saturate(0.85) contrast(0.98);
+}
+.pin span {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--c, #9aa0a3);
+  border: 2.5px solid #fff;
+  color: #fff;
+  font-family: var(--f-cartel);
+  font-size: 0.95rem;
+  line-height: 1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  transition: transform 0.15s;
+}
+.pin:not(.pin--tengo) span {
+  color: #1d2a30;
+  background: #c4c8c9;
+  border-color: #6d7477;
+}
+.pin--brillante.pin--tengo span {
+  box-shadow:
+    0 0 0 3px #f6e7a8,
+    0 2px 8px rgba(0, 0, 0, 0.4);
+}
+.pin:hover span,
+.pin:focus-visible span {
+  transform: scale(1.25);
+}
+.pin:focus-visible {
+  outline: none;
+}
+.pin:focus-visible span {
+  outline: 3px solid var(--rojo);
+  outline-offset: 2px;
+}
+.mapa__detalles {
+  margin-top: 14px;
+}
+.mapa__detalles summary {
+  cursor: pointer;
+  font-weight: 600;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+.mapa__lista {
+  columns: 16rem;
+  padding-left: 0;
+  list-style: none;
+}
+.mapa__lista a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+  color: var(--tinta);
+}
+.mapa__punto {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex: none;
+}
