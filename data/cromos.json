@@ -1,5 +1,5 @@
 {
-  "_leeme": "Un cromo por sitio. Los textos traducibles están en data/i18n/<idioma>.json. Tus campos: foto_mia, fecha_visita (AAAA-MM-DD), nota_personal y visitado. Usa «npm run pegar» para rellenarlos automáticamente.",
+  "_leeme": "Un cromo por sitio. Los textos traducibles están en data/i18n/<idioma>.json. Tus campos: fotos (lista de tus fotos), foto_mia (la de portada, una de «fotos»), fecha_visita (AAAA-MM-DD), nota_personal y visitado. Puedes editarlos desde la web (conectándola a GitHub) o con «npm run pegar».",
   "cromos": [
     {
       "id": "grossmuenster",
@@ -28,6 +28,9 @@
         "licencia_url": "https://creativecommons.org/licenses/by/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Limmat_mit_Grossm%C3%BCnster_-_panoramio.jpg"
       },
+      "fotos": [
+        "fotos/grossmuenster.jpg"
+      ],
       "foto_mia": "fotos/grossmuenster.jpg",
       "foto_de_prueba": true,
       "foto_credito": {
@@ -67,6 +70,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Chutes_du_Rhin_-_Octobre_2021.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -100,6 +104,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Stein_am_Rhein_-_Stadtkirche_und_Kloster_St.Georgen.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -133,6 +138,7 @@
         "licencia_url": "https://artlibre.org/licence/lal/en/",
         "fuente": "https://commons.wikimedia.org/wiki/File:StGallen_asv2022-10_F%C3%BCrstabtei_img1.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -166,6 +172,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Hauptgasse_Appenzell.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -199,6 +206,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Rapperswil_-_Seedamm_-_Holzbr%C3%BCcke_-_Etzel_Kulm_2010-10-21_16-39-22.JPG"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -232,6 +240,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Schloss_Arenenberg_mit_Napoleonmuseum.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -267,6 +276,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:S%C3%A4ntis_-_Batzberg_IMG_9803.JPG"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -302,6 +312,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Picswiss_GL-12-03.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -335,6 +346,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/2.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Flaesch_-_From_Regitzer_Spitz.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -368,6 +380,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:GR-96-03.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -401,6 +414,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Guarda_Grisons_001.JPG"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -434,6 +448,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Swiss_National_Park_045.JPG"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -467,6 +482,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Picswiss_GR-80-06_M%C3%BCstair_%28M%C3%BCnster%29_mit_Clostra_San_Jon_%28Kloster_St_Johann%29.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -500,6 +516,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Muottas_Muragl3.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -533,6 +550,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:St-Moritzersee2005.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -566,6 +584,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Silsersee.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -599,6 +618,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Julierpass_with_Juliertheater_%28Origen_Festival_Cultural%29_2_%28cropped%29.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -632,6 +652,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:RhB_Ge_4-4_III_UNESCO_Weltkulturerbe_auf_Landwasserviadukt.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -665,6 +686,7 @@
         "licencia_url": "https://creativecommons.org/publicdomain/mark/1.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Via_Mala.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -698,6 +720,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:SanBernhardino-Hospitz-See-01E.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -731,6 +754,7 @@
         "licencia_url": "https://creativecommons.org/publicdomain/mark/1.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Castelli.JPG"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -764,6 +788,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Gotthardhospiz_2011.JPG"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -798,6 +823,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Wallis_Furkapass_Hotel_Belvedere_1.JPG"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -831,6 +857,9 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Glacier_d%27Aletsch_-_2021.jpg"
       },
+      "fotos": [
+        "fotos/aletsch.jpg"
+      ],
       "foto_mia": "fotos/aletsch.jpg",
       "foto_de_prueba": true,
       "foto_credito": {
@@ -869,6 +898,9 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:CH.VS.Zermatt_2021-10-17_Matterhorn_8726.jpg"
       },
+      "fotos": [
+        "fotos/matterhorn.jpg"
+      ],
       "foto_mia": "fotos/matterhorn.jpg",
       "foto_de_prueba": true,
       "foto_credito": {
@@ -907,6 +939,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Grimentz_-_ao%C3%BBt_2022.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -940,6 +973,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Abbaye_de_Saint-Maurice.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -973,6 +1007,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Castle_of_Chillon_N.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1006,6 +1041,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Lavaux_Switzerland.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1039,6 +1075,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:CorbuVevey_6361.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1072,6 +1109,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Lausanne%2C_Switzerland_-_panoramio_%2834%29.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1105,6 +1143,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_Morges_depuis_le_vieux_port.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1138,6 +1177,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Vallorbe-Groto_069.JPG"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1171,6 +1211,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Creux_du_Van.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1204,6 +1245,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Latenium-3.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1237,6 +1279,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Altstadth%C3%BCgel_Erlach_am_Bielersee.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1270,6 +1313,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Murten_%28Suiza%29._Tejados_2.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1303,6 +1347,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by/2.5/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Panorama_Fribourg_107.JPG"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1336,6 +1381,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Gruy%C3%A8res_et_sa_cit%C3%A9_m%C3%A9di%C3%A9vale.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1369,6 +1415,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:GstaadPanoramaVillage.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1402,6 +1449,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/2.5/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Spiez.JPG"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1435,6 +1483,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:H%C3%B6hematte_Interlaken_-_panoramio.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1468,6 +1517,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_Lake_Brienz_%28view_from_the_southwest%29.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1502,6 +1552,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:CH.BE.Grindelwald_2021-04-20_Jungfraujoch_Sphinx-Observatory.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1535,6 +1586,7 @@
         "licencia_url": "https://creativecommons.org/publicdomain/mark/1.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Bern_luftaufnahme-2num.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1568,6 +1620,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Schaukaeserei_Affoltern_01_09.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1601,6 +1654,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/2.0/de/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Aebnistettenflue_entlebuch_03.JPG"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1634,6 +1688,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/2.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Schloss_Hallwyl_July_21st_2005.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1667,6 +1722,7 @@
         "licencia_url": "https://artlibre.org/licence/lal/en/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Luzern_asv2022-10_Kapellbr%C3%BCcke_img3.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1702,6 +1758,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Pilatus_%28mountain%29.JPG"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1736,6 +1793,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/2.5/",
         "fuente": "https://commons.wikimedia.org/wiki/File:7020_-_Meggen_-_Rainbow_over_Rigi.JPG"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1769,6 +1827,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Brunnen_see.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1802,6 +1861,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Tellskapelle2000.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1835,6 +1895,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/2.5/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Kloster_Einsiedeln_001.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1868,6 +1929,7 @@
         "licencia_url": "https://artlibre.org/licence/lal/en/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Basler_-_Basler_M%C3%BCnster_Westfassade.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1901,6 +1963,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Saint-Ursanne_Stadt.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1934,6 +1997,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Patrimoine_urbain_horloger_8.JPG"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -1967,6 +2031,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Jet_d%27eau_de_Gen%C3%A8ve_%28swiss%29.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -2000,6 +2065,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Lake_Lugano.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -2033,6 +2099,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by/3.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Monte_Bre_April15.JPG"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -2066,6 +2133,7 @@
         "licencia_url": "https://creativecommons.org/publicdomain/mark/1.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Morcote.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -2099,6 +2167,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by/2.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Ascona_%2811440030045%29.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,
@@ -2132,6 +2201,7 @@
         "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
         "fuente": "https://commons.wikimedia.org/wiki/File:Valle_di_Lodano_e_faggeta_sito_UNESCO.jpg"
       },
+      "fotos": [],
       "foto_mia": null,
       "foto_de_prueba": false,
       "fecha_visita": null,

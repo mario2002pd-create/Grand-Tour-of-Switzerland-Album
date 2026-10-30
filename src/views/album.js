@@ -1,5 +1,5 @@
 // B) ÁLBUM: una página por región; se pasa con swipe, flechas o teclado.
-import { estado, t, pegado, nombreCategoria, setModoPrevia, vistos, marcarVisto } from '../data.js';
+import { estado, t, pegado, pegadoDeVerdad, nombreCategoria, setModoPrevia, vistos, marcarVisto } from '../data.js';
 import { el, fmt, anunciar, reduceMotion } from '../util.js';
 import { crearCromo } from '../cromo.js';
 import {
@@ -11,6 +11,28 @@ import {
   esTactil,
 } from '../holo.js';
 import { dialogoExportar } from '../previa.js';
+import { conectado } from '../github.js';
+import { dialogoConectar, dialogoDesconectar, flujoCambiar } from '../fotos.js';
+
+/** Celda de la rejilla: el cromo y, si estás conectado a GitHub, un botón para cambiar su foto. */
+function celda(c) {
+  const li = el('li.celda', {}, crearCromo(c));
+  if (conectado() && pegadoDeVerdad(c)) {
+    li.append(
+      el(
+        'button.celda__cambiar',
+        {
+          type: 'button',
+          'aria-label': `Cambiar foto de ${c.numero} ${c.nombre}`,
+          title: 'Cambiar foto',
+          onclick: () => flujoCambiar(c, c.foto_mia),
+        },
+        el('span', { 'aria-hidden': 'true' }, '⟳'),
+      ),
+    );
+  }
+  return li;
+}
 
 const normalizar = (s) =>
   String(s || '')
@@ -42,6 +64,13 @@ export function vistaAlbum(main, args) {
     t('modo_vista_previa'),
   );
   const btnExportar = el('button.boton.boton--mini', { type: 'button', onclick: dialogoExportar }, t('exportar'));
+  const btnGitHub = el('button.boton.boton--mini.boton-gh', { type: 'button' });
+  const pintarGitHub = () => {
+    btnGitHub.textContent = conectado() ? '✓ GitHub conectado' : 'Conectar GitHub';
+    btnGitHub.title = conectado() ? 'Puedes guardar fotos desde esta web' : 'Para guardar tus fotos desde la web';
+  };
+  pintarGitHub();
+  btnGitHub.addEventListener('click', () => (conectado() ? dialogoDesconectar() : dialogoConectar()));
   const btnGiro = el('button.boton.boton--mini', { type: 'button', hidden: true }, t('activar_giroscopio'));
   const ayudaPrevia = el('p.album__ayuda-previa', { hidden: !estado.modoPrevia }, t('vista_previa_ayuda'));
 
@@ -51,7 +80,7 @@ export function vistaAlbum(main, args) {
     el('div.campo-buscar', {}, el('label.sr', { for: 'buscar' }, t('buscar')), inBuscar),
     el('div.campo-sel', {}, el('label', { for: 'filtro-cat' }, t('filtro_categoria')), selCat),
     el('div.campo-sel', {}, el('label', { for: 'filtro-reg' }, t('filtro_region')), selReg),
-    el('div.album__acciones', {}, btnPrevia, btnExportar, btnGiro),
+    el('div.album__acciones', {}, btnGitHub, btnPrevia, btnExportar, btnGiro),
   );
 
   // ——— Páginas ———
@@ -97,7 +126,7 @@ export function vistaAlbum(main, args) {
           el(
             'ul.rejilla',
             { role: 'list' },
-            r.cromos.map((c) => el('li', {}, crearCromo(c))),
+            r.cromos.map((c) => celda(c)),
           ),
           el('footer.pagina__pie', { 'aria-hidden': 'true' }, `— ${i + 1} —`),
         );
@@ -194,7 +223,7 @@ export function vistaAlbum(main, args) {
       el(
         'ul.rejilla',
         { role: 'list' },
-        lista.map((c) => el('li', {}, crearCromo(c))),
+        lista.map((c) => celda(c)),
       ),
     );
   }
@@ -308,6 +337,11 @@ export function vistaAlbum(main, args) {
     actualizarExportar();
   }
   window.addEventListener('album:cambio', refrescar);
+  const alConectar = () => {
+    pintarGitHub();
+    refrescar();
+  };
+  window.addEventListener('album:conexion', alConectar);
   const quitarHolo = activarHolo(raiz);
 
   // Ajusta la altura cuando cargan las imágenes
@@ -323,6 +357,7 @@ export function vistaAlbum(main, args) {
       document.removeEventListener('keydown', tecla);
       window.removeEventListener('resize', alRedimensionar);
       window.removeEventListener('album:cambio', refrescar);
+      window.removeEventListener('album:conexion', alConectar);
       quitarHolo();
       ro.disconnect();
     },

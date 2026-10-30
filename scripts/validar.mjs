@@ -32,7 +32,7 @@ const CAMPOS = [
   'enlace_oficial',
   'imagen',
 ];
-const CAMPOS_USUARIO = ['foto_mia', 'fecha_visita', 'nota_personal', 'visitado'];
+const CAMPOS_USUARIO = ['fotos', 'foto_mia', 'fecha_visita', 'nota_personal', 'visitado'];
 const ids = new Set();
 const numeros = new Set();
 
@@ -54,6 +54,10 @@ for (const c of cromos) {
     if (c.imagen?.[k] && !(await existe(c.imagen[k])))
       avisos.push(`${q}: aún no existe ${c.imagen[k]} (ejecuta «npm run fondos»)`);
   if (c.visitado && !c.foto_mia) errores.push(`${q}: visitado=true pero sin foto_mia`);
+  if (!Array.isArray(c.fotos)) errores.push(`${q}: «fotos» debe ser una lista`);
+  else for (const f of c.fotos) if (!(await existe(f))) errores.push(`${q}: no existe la foto ${f}`);
+  if (c.foto_mia && Array.isArray(c.fotos) && !c.fotos.includes(c.foto_mia))
+    errores.push(`${q}: foto_mia debe ser una de «fotos»`);
   if (c.foto_mia && !(await existe(c.foto_mia))) errores.push(`${q}: no existe la foto ${c.foto_mia}`);
   if (c.fecha_visita && !/^\d{4}-\d{2}-\d{2}$/.test(c.fecha_visita)) errores.push(`${q}: fecha_visita debe ser AAAA-MM-DD`);
 }

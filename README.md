@@ -23,6 +23,24 @@ Los 20 cromos **brillantes** (✦: los 14 de Patrimonio Mundial, la Biosfera de 
 
 ## Cómo añadir una foto
 
+Cada cromo puede tener **varias fotos**; una de ellas es la **portada** (la que se ve pegada en el álbum). Las demás aparecen como miniaturas en la ficha.
+
+### Opción 0: desde la web, en el móvil o el ordenador (la más cómoda)
+
+La web puede guardar tus fotos directamente en este repositorio. Solo hay que conectarla una vez en cada dispositivo:
+
+1. En el álbum pulsa **Conectar GitHub**.
+2. Crea un token en GitHub (el diálogo lleva el enlace): *Fine-grained token* → **Repository access: Only select repositories → Grand-Tour-of-Switzerland-Album** → **Permissions → Contents: Read and write** → *Generate token*.
+3. Pega el token y pulsa **Conectar**.
+
+A partir de ahí, en la ficha de cada cromo tienes **Pegar mis fotos**, **Añadir fotos** (puedes elegir varias a la vez), **Cambiar foto**, **★ Usar de portada**, **Borrar foto** y **Fecha y nota**. En el álbum, cada cromo pegado tiene además un botón **⟳** para cambiar su foto de portada.
+
+- Las fotos se reducen a 1600 px y se les **quita el GPS y el resto de metadatos** en tu navegador antes de subirlas.
+- Cada cambio es un commit en `main`: la web se vuelve a publicar sola y lo verás en todos tus dispositivos en 1–2 minutos (en el dispositivo conectado lo ves al momento).
+- El token se guarda solo en ese navegador. Para quitarlo: **✓ GitHub conectado → Desconectar**, y si quieres, revócalo en GitHub (*Settings → Developer settings → Personal access tokens*).
+- Los visitantes que no tengan tu token pueden ver el álbum, pero no cambiar nada.
+
+
 ### Opción 1: `npm run pegar` (recomendada)
 
 Necesitas [Node.js](https://nodejs.org) 20 o superior. La primera vez:
@@ -39,7 +57,7 @@ npm run pegar
 
 Te pregunta el cromo (por id, como `matterhorn`, o por número, como `26`), la ruta de la foto (puedes arrastrarla a la terminal) y una nota. El script:
 
-1. redimensiona la foto a 1600 px como máximo y la guarda en `fotos/<id>.jpg`;
+1. redimensiona la foto a 1600 px como máximo y la guarda en `fotos/<id>-<código>.jpg`, **añadiéndola** a las fotos del cromo (te pregunta si es la nueva portada; sin preguntas lo es, salvo con `--no-portada`);
 2. lee la **fecha del EXIF** (puedes cambiarla);
 3. **borra todos los metadatos** de la foto publicada, **GPS incluido**;
 4. marca el cromo como `visitado: true` y actualiza `data/cromos.json`.
@@ -59,9 +77,10 @@ git add fotos data && git commit -m "Pego el cromo 26" && git push
 ### Opción 2: a mano
 
 1. Sube tu foto a `fotos/<id>.jpg` (por ejemplo `fotos/matterhorn.jpg`). **Quítale antes el GPS**: el repositorio es público.
-2. Edita el cromo en `data/cromos.json`:
+2. Edita el cromo en `data/cromos.json` (`fotos` es la lista de todas tus fotos y `foto_mia`, la de portada):
 
 ```json
+"fotos": ["fotos/matterhorn.jpg", "fotos/matterhorn-2.jpg"],
 "foto_mia": "fotos/matterhorn.jpg",
 "fecha_visita": "2026-07-24",
 "nota_personal": "Amanecer desde el Riffelsee",

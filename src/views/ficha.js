@@ -17,6 +17,8 @@ import {
 import { el, fmt, url, formatoFecha, formatoNumero, anunciar, giro } from '../util.js';
 import { elegirFoto, quitarPrevia, descargarFotoPrevia } from '../previa.js';
 import { compartirCromo } from '../share.js';
+import { fotosDe, imgFoto, flujoAnadir, flujoCambiar, flujoPortada, flujoBorrar, flujoTextos } from '../fotos.js';
+import { conectado } from '../github.js';
 import { activarHolo, iniciarGiroscopioSiSePuede } from '../holo.js';
 
 let actual = null; // { nodo, mapa, id, previoFoco, limpiar }
@@ -109,6 +111,14 @@ function construir(c) {
     abrirFicha(otro.id);
   };
 
+  // ——— Tus fotos: la de portada se ve primero; las demás, en la galería ———
+  const misFotos = pegadoDeVerdad(c) ? fotosDe(c) : [];
+  let rutaVista = c.foto_mia || misFotos[0];
+  const fotoPolaroid = () =>
+    pegadoDeVerdad(c)
+      ? imgFoto(rutaVista, { alt: `Tu foto de ${c.nombre}` })
+      : el('img', { src: fotoDe(c), alt: `Tu foto de ${c.nombre}` });
+
   // ——— Polaroid con giro ———
   const polaroid = el(
     'button.polaroid' + (brillante && tiene ? '.holo' : ''),
@@ -130,7 +140,7 @@ function construir(c) {
         'span.polaroid__foto',
         {},
         tiene
-          ? el('img', { src: fotoDe(c), alt: `Tu foto de ${c.nombre}` })
+          ? fotoPolaroid()
           : el(
               'span.polaroid__vacia',
               {},
@@ -153,9 +163,64 @@ function construir(c) {
   );
 
   const acciones = el('div.ficha__acciones');
+  const boton = (texto, onclick, extra = '') => el(`button.boton.boton--claro${extra}`, { type: 'button', onclick }, texto);
   if (tiene) {
-    acciones.append(el('button.boton.boton--rojo', { type: 'button', onclick: () => compartirCromo(c) }, t('compartir')));
+    acciones.append(
+      el(
+        'button.boton.boton--rojo',
+        {
+          type: 'button',
+          onclick: () => compartirCromo(c, pegadoDeVerdad(c) ? polaroid.querySelector('.polaroid__foto img')?.src : undefined),
+        },
+        t('compartir'),
+      ),
+    );
   }
+  // Galería de miniaturas (si hay más de una foto)
+  const galeria = el('ul.galeria', { 'aria-label': `Tus fotos de ${c.nombre}` });
+  const accionesFoto = el('div.ficha__acciones.ficha__acciones--fotos');
+  function pintarGaleria() {
+    galeria.replaceChildren(
+      ...(misFotos.length > 1
+        ? misFotos.map((ruta, n) =>
+            el(
+              'li',
+              {},
+              el(
+                'button.galeria__mini',
+                {
+                  type: 'button',
+                  'aria-pressed': String(ruta === rutaVista),
+                  onclick: () => {
+                    rutaVista = ruta;
+                    polaroid.querySelector('.polaroid__foto img')?.replaceWith(fotoPolaroid());
+                    polaroid.classList.remove('polaroid--girada');
+                    pintarGaleria();
+                  },
+                },
+                imgFoto(ruta, {
+                  alt: `Foto ${n + 1} de ${misFotos.length}${ruta === c.foto_mia ? ' (portada)' : ''}`,
+                  loading: 'lazy',
+                }),
+                ruta === c.foto_mia ? el('span.galeria__portada', { 'aria-hidden': 'true' }, '★') : null,
+              ),
+            ),
+          )
+        : []),
+    );
+    accionesFoto.replaceChildren(
+      ...(pegadoDeVerdad(c)
+        ? [
+            boton('Cambiar foto', () => flujoCambiar(c, rutaVista)),
+            boton('Añadir fotos', () => flujoAnadir(c)),
+            misFotos.length > 1 && rutaVista !== c.foto_mia ? boton('★ Usar de portada', () => flujoPortada(c, rutaVista)) : null,
+            boton('Borrar foto', () => flujoBorrar(c, rutaVista)),
+            boton('Fecha y nota', () => flujoTextos(c)),
+          ].filter(Boolean)
+        : [boton('Pegar mis fotos', () => flujoAnadir(c))]),
+    );
+  }
+  pintarGaleria();
   if (!pegadoDeVerdad(c)) {
     acciones.append(el('button.boton.boton--claro', { type: 'button', onclick: () => elegirFoto(c) }, t('probar_foto')));
     if (enPrevia(c)) {
@@ -310,7 +375,16 @@ function construir(c) {
         {},
         polaroid,
         el('p.ficha__pista', { 'aria-hidden': 'true' }, 'Toca la foto para darle la vuelta'),
+        galeria,
         acciones,
+        accionesFoto,
+        conectado()
+          ? null
+          : el(
+              'p.ficha__nota-gh',
+              {},
+              'Para guardar fotos desde aquí se te pedirá conectar con GitHub una vez en este dispositivo.',
+            ),
       ),
       info,
     ),

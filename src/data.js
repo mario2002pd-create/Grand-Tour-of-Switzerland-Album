@@ -1,6 +1,7 @@
 // Carga los datos del álbum y une los textos del idioma activo.
 import { url } from './util.js';
 import { leerTodas, guardar, borrar } from './idb.js';
+import { conexion, leerJSON } from './github.js';
 
 export const IDIOMA = 'es';
 
@@ -12,6 +13,7 @@ export const estado = {
   ruta: null,
   i18n: null,
   previas: new Map(), // id -> { blob, fecha, nota, objectURL }
+  fotosLocales: new Map(), // ruta -> objectURL de fotos recién subidas a GitHub (aún sin publicar)
   modoPrevia: false,
 };
 
@@ -21,9 +23,21 @@ const cargarJSON = async (ruta) => {
   return r.json();
 };
 
+/** Si estás conectado a GitHub, se leen tus datos más recientes (sin esperar a que se publique la web). */
+async function cargarCromos() {
+  if (conexion()) {
+    try {
+      return await leerJSON('data/cromos.json');
+    } catch {
+      /* sin red o token caducado: se usa la versión publicada */
+    }
+  }
+  return cargarJSON('data/cromos.json');
+}
+
 export async function cargarDatos() {
   const [base, i18n, album] = await Promise.all([
-    cargarJSON('data/cromos.json'),
+    cargarCromos(),
     cargarJSON(`data/i18n/${IDIOMA}.json`),
     cargarJSON('data/album.json'),
   ]);
@@ -58,10 +72,13 @@ export const pegado = (c) => Boolean((c.visitado && c.foto_mia) || estado.previa
 export const pegadoDeVerdad = (c) => Boolean(c.visitado && c.foto_mia);
 export const enPrevia = (c) => estado.previas.has(c.id) && !pegadoDeVerdad(c);
 
+/** src de una foto propia: la copia local recién subida o la publicada en la web. */
+export const srcFoto = (ruta) => estado.fotosLocales.get(ruta) || url(ruta);
+
 export function fotoDe(c) {
   const p = estado.previas.get(c.id);
   if (p && !pegadoDeVerdad(c)) return p.objectURL;
-  return c.foto_mia ? url(c.foto_mia) : null;
+  return c.foto_mia ? srcFoto(c.foto_mia) : null;
 }
 export function fechaDe(c) {
   return enPrevia(c) ? estado.previas.get(c.id).fecha : c.fecha_visita;
@@ -104,6 +121,7 @@ export async function jsonExportado() {
     if (!p) continue;
     c.visitado = true;
     c.foto_mia = `fotos/${c.id}.jpg`;
+    c.fotos = [...new Set([...(c.foto_de_prueba ? [] : c.fotos || []), c.foto_mia])];
     c.foto_de_prueba = false;
     c.fecha_visita = p.fecha || c.fecha_visita || null;
     c.nota_personal = p.nota || c.nota_personal || '';
