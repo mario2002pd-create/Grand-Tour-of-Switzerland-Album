@@ -9,6 +9,8 @@ Mi álbum personal de cromos del **Grand Tour of Switzerland**: 64 sitios, cada 
 
 ## Qué hay dentro
 
+![Capturas del álbum en el móvil](docs/capturas.jpg)
+
 | Pantalla | Qué hace |
 | --- | --- |
 | **Portada** | Tapa de cartón con el contador «X / 64 cromos pegados». Se toca y el álbum se abre. |
